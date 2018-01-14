@@ -1,0 +1,21 @@
+.article {
+
+  
+
+  &__header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color1;
+    margin-bottom: 0
+  }
+
+  &__subheader {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 100;
+
+  }
+
+
+}

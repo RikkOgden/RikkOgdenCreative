@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color:$color2;
+  background: $color3;
+  background: #fff;
+
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  background:rgba(255,255,255,0.3);
+  border: none;
+  max-width: 50%;
+  margin: 1.2em auto;
+
+  &--dark {
+    background:rgba(0,0,0,0.3);
+    display: block;
+    height: 1px;
+    border: none;
+    max-width: 50%;
+    margin: 1.2em auto;
+  }
+
+}

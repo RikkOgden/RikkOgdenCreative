@@ -1,0 +1,88 @@
+.hero__image--scale-pan {
+
+  min-width: 800px;
+
+animation: scale-pan 16s infinite;
+
+@mixin atMedium {
+min-width: 1200px;
+width: 100%;
+}
+@mixin atMedium {
+min-width: 1920px;
+width: 100%;
+}
+}
+
+
+.hero__image--grow {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 0;
+width: 100%;
+
+min-width: 800px;
+animation: grow-up 18s infinite;
+
+
+@mixin atMedium {
+
+width: 100%;
+}
+@mixin atMedium {
+
+width: 100%;
+}
+
+}
+
+@keyframes scale-pan {
+    0% {
+      opacity: 0;
+      filter: blur(2px);
+
+    }
+    5% {
+      opacity: 0.7;
+
+    }
+    95% {
+        transform: scale3d(1.3, 1.3, 1.3) translate3d(-170px, -100px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+        filter: blur(4px);
+    }
+    100% {
+        transform: scale3d(1.8, 1.8, 1.8) translate3d(-190px, -120px, 0px);
+        opacity: 0;
+        filter: blur(15px);
+    }
+}
+
+@keyframes grow-up {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    5% {
+      opacity: 0;
+        visibility: visible;
+    }
+
+    10% {
+      opacity: 0.7;
+        visibility: visible;
+    }
+    90% {
+        transform: scale3d(2.5, 2.5, 2.5) translate3d(0, -30%, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform-origin: 50% 0;
+    }
+    100% {
+        transform: scale3d(2.5, 2.5, 2.5) translate3d(0, 0, 0px);
+        opacity: 0;
+
+    }
+}
