@@ -1,3 +1,15 @@
+@define-mixin maxSmall {
+  @media (max-width: 481px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin maxMedium {
+  @media (max-width: 769px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin atSmall {
   @media (min-width: 481px) {
     @mixin-content;

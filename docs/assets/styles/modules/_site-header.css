@@ -1,34 +1,37 @@
 .site-header {
+
 width: 100%;
 @mixin clearfix;
 background-color: rgba($color2, 0.2);
-transition:  background-color 0.3s ease-out;
 z-index: 10;
+
+transition: background-color 0.3s ease-out;
 @mixin atMedium {
 position: fixed;
+height: 60px;
 }
 
 &__logo {
 
     background-color: $color2;
     position: absolute;
-    top:-22px;
     left:50%;
-    transform-origin: 50%;
-    transform: translateX(-50%) scale(0.7);
+    transform-origin: 50% 0;
+    transform: translate3d(-50%, -8px, 0) scale3d(0.7, 0.7, 0.7);
+    transition: transform 0.3s ease-out;
     z-index: 8;
     padding: 20px;
     text-indent: -9999px;
     border-radius: 8px 8px;
     overflow: hidden;
-    transition: all 0.3s ease-out;
 
 
-     &--transparent {
-       background-color:transparent;
-        transform: translateX(-50%) scale(0.5);
-
-     }
+    &--transparent {
+      @mixin maxMedium {
+      background-color:transparent;
+      transform: translate3d(-50%, 0, 0) scale3d(0.5, 0.5, 0.5);
+    }
+    }
 
 
 
@@ -36,25 +39,22 @@ position: fixed;
       top:-8px;
       left:0;
       transform-origin: 0 0;
-      transform: translateX(0) scale(.8);
-      transition: all 0.3s ease-out;
-
-
-}
-
+      transform: scale(.8);
+    }
 
 }
 /*end logo */
 
 @mixin atMedium {
 &--is-scrolling {
-background-color:rgba($color2, 0.8);
-
+background-color:rgba($color2, 0.94);
 .site-header__logo {
-transform: translateX(0) scale(.52);
+transform: translateX(0) scale(.56);
 background-color:rgba($color2, 1);
 border-radius: 0 0 0 0;
+
 }
+
 
 }
 }

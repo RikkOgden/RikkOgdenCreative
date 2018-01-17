@@ -11101,8 +11101,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]('.site-header__menu-icon', '.nav-primary');
-new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.usp--home', '90%');
-new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.feature-item', '90%');
+new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.usp--home', '100%');
+new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.feature-item', '100%');
 new __WEBPACK_IMPORTED_MODULE_2__modules_StickyHeader__["a" /* default */]();
 new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]();
 
@@ -11219,6 +11219,7 @@ var currentItem = this;
 
 
 
+
 class StickyHeader {
 
     constructor (){
@@ -11227,6 +11228,7 @@ class StickyHeader {
     this.pageSection = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".page-section");
     this.navLinks    = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".primary-nav a");
     this.lazyimages  = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".lazyload");
+
     this.addSmoothScroll();
     this.createWaypoints();
     this.createPageSectionWaypoints ();
@@ -11234,13 +11236,12 @@ class StickyHeader {
     }
 
     addSmoothScroll (){
-      this.navLinks.smoothScroll();
-    }
+    this.navLinks.smoothScroll();
+  }
 
-
-    refreshWaypoints (){
+  refreshWaypoints (){
       this.lazyimages.on('load', function(){
-        Waypoint.refreshAll();
+      Waypoint.refreshAll();
       });
     }
 
@@ -11255,7 +11256,6 @@ class StickyHeader {
                 objThis.itemToStick.addClass("site-header--is-scrolling");
                 }else {
                 objThis.itemToStick.removeClass("site-header--is-scrolling");
-
                 }
           },
             offset: "10%"
