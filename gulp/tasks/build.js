@@ -59,7 +59,7 @@ gulp.task('useminTrigger', ['deleteDocsFolder'], function () {
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function () {
-  return gulp.src(['./app/index.html', './app/about-me.html'])
+  return gulp.src(['./app/index.html'])
   .pipe(usemin({
     css:  [function(){return rev()}, function() {return cssnano()}],
     js:   [function(){return rev()}, function() {var options = {}; return minify(options)}]
