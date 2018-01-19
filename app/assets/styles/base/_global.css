@@ -3,24 +3,29 @@
 }
 
 
-
+.noscroll {
+overflow: hidden;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   color:$color2;
-  background: $color3;
   background: #fff;
   line-height: 1.8;
+  color: color($color2 tint(25%) alpha(1));
+  border-radius: 3px;
+}
 
+strong, b {
+  color: color($color2 shade(15%) alpha(1));
+  font-weight: 700;
+
+  &.brand-1 {
+  color: color($color4 shade(15%) alpha(1));
+  }
 
 }
 
-.preload * {
- -webkit-transition: none !important;
- -moz-transition: none !important;
- -ms-transition: none !important;
- -o-transition: none !important;
-}
 
 img {
   max-width: 100%;
@@ -28,7 +33,9 @@ img {
 }
 
 
-
+.bkg-blue {
+  background:$color4;
+}
 
 .hr {
   display: block;

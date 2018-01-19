@@ -11223,10 +11223,10 @@ var currentItem = this;
 class StickyHeader {
 
     constructor (){
-    this.itemTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".hero__title");
+    this.itemTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("#work-history, .hero__title");
     this.itemToStick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
     this.pageSection = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".page-section");
-    this.navLinks    = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".primary-nav a");
+    this.navLinks    = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".nav-primary a");
     this.lazyimages  = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".lazyload");
 
     this.addSmoothScroll();
@@ -11680,29 +11680,49 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 class Modal {
 
-constructor(){
-  this.open   = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".btn--open-modal");
-  this.close  = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".btn--close-modal");
-  this.modal  = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modal");
-  this.events();
+  constructor() {
+    this.open = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".button--open-modal");
+    this.close = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".button--close-modal, .modal__overlay");
+    this.modal = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("#work-history");
+    this.events();
+    this.onEscape();
 
-}
+  }
 
-events(){
-  this.open.click(this.openModal.bind(this));
+  onEscape() {
+    this.on('keyup', function(evt) {
+      if (evt.keyCode == 27) {
+        this.close.click(this.closeModal.bind(this));
+      }
+    });
+  }
 
-  this.close.click(this.closeModal.bind(this));
-}
+  events() {
+    this.open.click(this.openModal.bind(this));
+    this.close.click(this.closeModal.bind(this));
+  }
 
-openModal (){
-  this.modal.addClass("modal--is-visible");
-  return false;
-}
+  openModal() {
 
-closeModal (){
-  this.modal.removeClass("modal--is-visible");
-  return false;
-}
+    //var curScrollTop = $(window).scrollTop();
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()("html").addClass("noscroll");
+    this.modal.addClass("modal--is-visible");
+    this.modal.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#work-history .button--close-modal').focus();
+    });
+
+    //setTimeout(function() { $('.button--close-modal').focus() }, 1500);
+
+    //.css('top', '-' + curScrollTop + 'px');
+    return false;
+
+  }
+
+  closeModal() {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()("html").removeClass("noscroll");
+    this.modal.removeClass("modal--is-visible");
+    return false;
+  }
 
 }
 

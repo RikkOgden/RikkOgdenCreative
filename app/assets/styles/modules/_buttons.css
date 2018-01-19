@@ -1,0 +1,26 @@
+button, .button {
+border:none;
+color:#fff;
+background-color:$color4;
+padding: 8px 15px;
+border-radius:3px;
+box-shadow: 0 2px 2px 0 rgba($color2,0.14), 0 4px 18px 0 rgba($color2,0.11);
+transition: 0.3s;
+font-weight:300;
+display: inline-block;
+text-decoration: none;
+cursor:pointer;
+text-align: center;
+
+&--fw {
+  width:100%;
+}
+
+&:hover:not(:disabled) {
+  background-color: color($color4 shade(45%) alpha(1));
+  box-shadow: 0 2px 2px 0 rgba($color2,0.14), 0 6px 34px 0 rgba($color2,0.11);
+}
+}
+
+button:disabled { opacity: 0.1}
+button.lg, .button.lg {font-size: 1.5rem;}

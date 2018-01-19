@@ -6,10 +6,10 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class StickyHeader {
 
     constructor (){
-    this.itemTrigger = $(".hero__title");
+    this.itemTrigger = $("#work-history, .hero__title");
     this.itemToStick = $(".site-header");
     this.pageSection = $(".page-section");
-    this.navLinks    = $(".primary-nav a");
+    this.navLinks    = $(".nav-primary a");
     this.lazyimages  = $(".lazyload");
 
     this.addSmoothScroll();
