@@ -1,25 +1,18 @@
 var gulp = require('gulp'),
 postcss = require('gulp-postcss'),
 //autoprefixer = require('autoprefixer'),
-cssvars = require('postcss-simple-vars'),
+//cssvars = require('postcss-simple-vars'),
 nestedcss = require('postcss-nested'),
 cssimport = require('postcss-import'),
 mixins = require('postcss-mixins'),
+cssnext = require("postcss-cssnext");
 //hexrgba = require('postcss-hexrgba'),
-postcss = require('gulp-postcss');
+//postcss = require('gulp-postcss');
 
 
 gulp.task('styles', function(){
   return gulp.src('./app/assets/styles/styles.css')
-  .pipe(postcss([
-    require("postcss-import")(),
-    require("postcss-url")(),
-    require("postcss-cssnext")(),
-    cssimport,
-    mixins,
-    cssvars,
-    nestedcss
-     ]))
+  .pipe(postcss([postcss, cssimport, mixins, nestedcss, cssnext]))
   .on('error', function(theError){
     console.log(theError.toString());
     this.emit('end');

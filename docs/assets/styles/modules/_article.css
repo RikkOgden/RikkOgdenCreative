@@ -1,12 +1,12 @@
 .article {
 
-  
+
 
   &__header {
     text-align: center;
     font-size: 3rem;
     font-weight: 300;
-    color: $color1;
+    color: var(var(--color1));
     margin-bottom: 0
   }
 

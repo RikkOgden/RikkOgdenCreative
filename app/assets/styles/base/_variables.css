@@ -1,4 +1,4 @@
-$color1: #6c969d; /* blue */
-$color2: #353531; /* dark-grey */
-$color3: #e6e6ea; /* blue */
-$color4: #2ab7ca; /* blue */
+:root {
+--color1: #2ab7ca;
+--color2: #353531;
+}

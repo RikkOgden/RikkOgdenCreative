@@ -1,10 +1,11 @@
 button, .button {
 border:none;
 color:#fff;
-background-color:$color4;
-padding: 8px 15px;
-border-radius:3px;
-box-shadow: 0 2px 2px 0 rgba($color2,0.14), 0 4px 18px 0 rgba($color2,0.11);
+background-color:var(--color1);
+padding: 8px 15px 5px 15px;
+border-radius:4px;
+border-bottom: 4px solid color(var(--color1) shade(15%));
+box-shadow: 0 2px 2px 0 color(var(--color2)  alpha(.5));
 transition: 0.3s;
 font-weight:300;
 display: inline-block;
@@ -17,8 +18,9 @@ text-align: center;
 }
 
 &:hover:not(:disabled) {
-  background-color: color($color4 shade(45%) alpha(1));
-  box-shadow: 0 2px 2px 0 rgba($color2,0.14), 0 6px 34px 0 rgba($color2,0.11);
+  background-color: color(var(--color1) shade(30%));
+  border-bottom-color: color(var(--color1) shade(45%));
+  box-shadow: 0 6px 6px 0 color(var(--color2)  alpha(.35));
 }
 }
 

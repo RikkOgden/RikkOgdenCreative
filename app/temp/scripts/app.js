@@ -11101,7 +11101,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]('.site-header__menu-icon', '.nav-primary');
-new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.usp--home', '100%');
 new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.feature-item', '100%');
 new __WEBPACK_IMPORTED_MODULE_2__modules_StickyHeader__["a" /* default */]();
 new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]();
@@ -11223,7 +11222,7 @@ var currentItem = this;
 class StickyHeader {
 
     constructor (){
-    this.itemTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("#work-history, .hero__title");
+    this.itemTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".hero__title");
     this.itemToStick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
     this.pageSection = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".page-section");
     this.navLinks    = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".nav-primary a");

@@ -3,24 +3,29 @@
 }
 
 
-
+.noscroll {
+overflow: hidden;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
-  color:$color2;
-  background: $color3;
+  color:--color2;
   background: #fff;
   line-height: 1.8;
+  color: color(var(--color2) tint(25%) alpha(1));
+  border-radius: 3px;
+}
 
+strong, b {
+  color: color(var(--color2) shade(15%) alpha(1));
+  font-weight: 700;
+
+  &.brand-1 {
+  color: color(var(--color1) shade(15%) alpha(1));
+  }
 
 }
 
-.preload * {
- -webkit-transition: none !important;
- -moz-transition: none !important;
- -ms-transition: none !important;
- -o-transition: none !important;
-}
 
 img {
   max-width: 100%;
@@ -28,20 +33,20 @@ img {
 }
 
 
-
+.bkg-blue {
+  background:var(--color1);
+}
 
 .hr {
   display: block;
   height: 1px;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  background-color: #fff;
   border: none;
   max-width: 50%;
   margin: 1.2em auto;
 
   &--dark {
-    background: linear-gradient(to right, rgba($color1,0) 0%, rgba($color1,.7) 20%, rgba($color1,.7) 54%, rgba($color1,.7) 80%, rgba($color1,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+    background-color: var(--color1);
     display: block;
     height: 1px;
     border: none;

@@ -1,4 +1,4 @@
-$color1: #6c969d;
-$color2: #353531;
-$color3: #e6e6ea;
-$color4: #2ab7ca;
+:root {
+--color1: #2ab7ca;
+--color2: #353531;
+}

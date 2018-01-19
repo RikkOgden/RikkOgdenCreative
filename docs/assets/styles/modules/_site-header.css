@@ -2,18 +2,24 @@
 
 width: 100%;
 @mixin clearfix;
-background-color: rgba($color2, 0.2);
+background-color: color(var(--color2) shade(25%) alpha(0.5));
+
 z-index: 10;
 
 transition: background-color 0.3s ease-out;
 @mixin atMedium {
 position: fixed;
 height: 60px;
+z-index: 5;
+}
+
+&__hide {
+  z-index: 1;
 }
 
 &__logo {
 
-    background-color: $color2;
+    background-color: var(--color2);
     position: absolute;
     left:50%;
     transform-origin: 50% 0;
@@ -47,10 +53,10 @@ height: 60px;
 
 @mixin atMedium {
 &--is-scrolling {
-background-color:rgba($color2, 0.94);
+background-color: color(var(--color2) alpha(0.92));
 .site-header__logo {
 transform: translateX(0) scale(.56);
-background-color:rgba($color2, 1);
+background-color: color(var(--color2) alpha(1));
 border-radius: 0 0 0 0;
 
 }
