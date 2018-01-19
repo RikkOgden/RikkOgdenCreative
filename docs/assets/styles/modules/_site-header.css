@@ -2,7 +2,7 @@
 
 width: 100%;
 @mixin clearfix;
-background-color: color(var(--color2) shade(25%) alpha(0.5));
+background: color(var(--color2) shade(15%) alpha(0.2));
 
 z-index: 10;
 

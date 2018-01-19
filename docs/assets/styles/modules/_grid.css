@@ -91,8 +91,37 @@ padding-right:35px;
     &__12 {width: 100%}
   }
 
+  @mixin atSmall {
 
+  &--sm__1 {width: 8.333%;}
+  &--sm__2 {width: 16.66%;}
+  &--sm__3 {width: 25%;}
+  &--sm__4 {width:33.333%}
+  &--sm__5 {width: 41.66%;}
+  &--sm__6 {width: 50%;}
+  &--sm__7 {width: 58.33%;}
+  &--sm__8 {width: 66.66%;}
+  &--sm__9 {width: 75%;}
+  &--sm__10 {width: 83.33%;}
+  &--sm__11 {width: 91.66%;}
+  &--sm__12 {width: 100%}
+}
 
+  @mixin atMedium {
+  min-height:1px;
+  &--md__1 {width: 8.333%;}
+  &--md__2 {width: 16.66%;}
+  &--md__3 {width: 25%;}
+  &--md__4 {width:33.333%}
+  &--md__5 {width: 41.66%;}
+  &--md__6 {width: 50%;}
+  &--md__7 {width: 58.33%;}
+  &--md__8 {width: 66.66%;}
+  &--md__9 {width: 75%;}
+  &--md__10 {width: 83.33%;}
+  &--md__11 {width: 91.66%;}
+  &--md__12 {width: 100%}
+}
 }
 
 .flexbox &--equal-heights {
