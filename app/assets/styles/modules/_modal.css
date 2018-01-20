@@ -69,10 +69,13 @@ transition: 0.5s;
 cursor:pointer;
 padding: 0;
 background-color: transparent;
+border:none;
+box-shadow: none;
 
 &:hover:not(:disabled)  {
 background-color: transparent;
 transform: rotate(180deg);
+box-shadow: none;
 }
 
 &__x {

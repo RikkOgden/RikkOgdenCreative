@@ -9,7 +9,7 @@ class StickyHeader {
     this.itemTrigger = $(".hero__title");
     this.itemToStick = $(".site-header");
     this.pageSection = $(".page-section");
-    this.navLinks    = $(".nav-primary a");
+    this.navLinks    = $(".site-header a");
     this.lazyimages  = $(".lazyload");
 
     this.addSmoothScroll();
@@ -19,7 +19,9 @@ class StickyHeader {
     }
 
     addSmoothScroll (){
-    this.navLinks.smoothScroll();
+    this.navLinks.smoothScroll({
+      offset: -70
+    });
   }
 
   refreshWaypoints (){
