@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.noscroll {
+overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color:--color2;
+  background: #fff;
+  line-height: 1.8;
+  color: color(var(--color2) tint(25%) alpha(1));
+  border-radius: 3px;
+}
+
+strong, b {
+  color: color(var(--color2) shade(15%) alpha(1));
+  font-weight: 700;
+
+  &.brand-1 {
+  color: color(var(--color1) shade(15%) alpha(1));
+  }
+
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.bkg-blue {
+  background:var(--color1);
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  border: none;
+  max-width: 50%;
+  margin: 1.2em auto;
+
+  &--dark {
+    background-color: var(--color1);
+    display: block;
+    height: 1px;
+    border: none;
+    max-width: 50%;
+    margin: 1.2em auto;
+  }
+
+}

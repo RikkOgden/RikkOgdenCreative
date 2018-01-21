@@ -1,0 +1,7 @@
+.offset-display {
+  text-indent: -9999px;
+  max-height: 0px;
+  line-height: 0;
+  position: absolute;
+  left:-9999px;
+}
