@@ -393,6 +393,9 @@ img {
   border: none;
   max-width: 50%;
   margin: 1.2em auto;
+  background: rgba (255,255,255,0);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 1)), color-stop(70%, rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
 
 }
 .hr--dark {
@@ -403,6 +406,91 @@ img {
     max-width: 50%;
     margin: 1.2em auto;
   }
+@font-face {
+  font-family: 'icons-brands';
+  src:  url('../../assets/fonts/icons-brands.eot?n8mbjq');
+  src:  url('../../assets/fonts/icons-brands.eot?n8mbjq#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/icons-brands.ttf?n8mbjq') format('truetype'),
+    url('../../assets/fonts/icons-brands.woff?n8mbjq') format('woff'),
+    url('../../assets/fonts/icons-brands.svg?n8mbjq#icons-brands') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i.ficon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons-brands' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+i.ficon--boxed {
+
+   padding: 3px;
+   background: #fff;
+   border-radius: 3px;
+ }
+i.ficon--lg {
+  font-size:24px;
+  font-size:1.5rem;
+}
+.ficon-postcss:before {
+  content: "\e90a";
+  color: #dc3a0d;
+}
+.ficon-jquery:before {
+  content: "\e90c";
+  color: #0769ad;
+}
+.ficon-adobeillustrator:before {
+  content: "\e900";
+  color: #ff7c00;
+}
+.ficon-adobephotoshop:before {
+  content: "\e901";
+  color: #00c8ff;
+}
+.ficon-css3:before {
+  content: "\e902";
+  color: #1572b6;
+}
+.ficon-git:before {
+  content: "\e903";
+  color: #f14e32;
+}
+.ficon-github:before {
+  content: "\e904";
+  color: #000;
+}
+.ficon-gulp:before {
+  content: "\e905";
+  color: #da4648;
+}
+.ficon-html5:before {
+  content: "\e906";
+  color: #e34f26;
+}
+.ficon-linkedin:before {
+  content: "\e907";
+  color: #0077b5;
+}
+.ficon-nodejs:before {
+  content: "\e908";
+  color: #393;
+}
+.ficon-npm:before {
+  content: "\e909";
+  color: #cb3837;
+}
 .wrapper {
   overflow: hidden;
 
@@ -600,10 +688,8 @@ z-index: 5
             transform-origin: 50% 0;
     -webkit-transform: translate3d(-50%, -8px, 0) scale3d(0.7, 0.7, 0.7);
             transform: translate3d(-50%, -8px, 0) scale3d(0.7, 0.7, 0.7);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
     z-index: 8;
     padding: 20px;
     text-indent: -9999px;
@@ -643,6 +729,15 @@ background-color: rgb(53, 53, 49);
 border-radius: 0 0 0 0;
 
 }
+  .site-header--is-scrolling .site-header__logo .icon--logo {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+
+    .site-header--is-scrolling .site-header__logo .icon--logo:hover {
+      opacity: 1;
+    }
   }
 .site-header__menu-icon {
   width:25px;
@@ -709,7 +804,36 @@ display:none
   padding: 30px 0;
   padding: 1.875rem 0;
   background-color: #353531;
-  color: #fff;
+  color: #f6f6f6;
+
+
+}
+.site-footer__logo {
+  text-align: center;
+  padding: 0 0 48px 0;
+  padding: 0 0 3rem 0;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.site-footer__logo:hover {
+  opacity: 1;
+  }
+.site-footer__logo .icon--logo {
+  display: inline-block;}
+.site-footer__links {
+  text-align: center;
+}
+.site-footer__social {
+  text-align: center;
+}
+.site-footer__small {
+  font-size: 12px;
+  font-size: 0.75rem;
+    text-align: center;
 }
 .nav-primary {
   position:absolute;
@@ -768,6 +892,9 @@ display:none
 
 }
   }
+.nav-primary a--is-current-link {
+  color: #000;
+}
 .nav-primary a:hover {
   opacity: 1;
 }
@@ -1063,8 +1190,8 @@ background:#fff;
     background-image: url('../../assets/images/photo-rikk-ogden72.jpg');
 }
 .ad__image--rikk-lg {
-    background-image: url('../../assets/images/photo-hero-image-rikk72.jpg');
-    background-position:  center 30%;
+    /* background-image: url('../../assets/images/photo-hero-image-rikk72.jpg');
+    background-position:  center 30%; */
 }
 .ad__image::after {
     display:block;
@@ -1192,10 +1319,10 @@ background:#fff;
   left:0;
   padding:10px;
 padding-bottom: 200px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(0.5) rotate(-180deg);
+          transform: scale(0.5) rotate(-180deg);
   -webkit-transform-origin: 50%;
           transform-origin: 50%;
   visibility: hidden;
@@ -1204,10 +1331,10 @@ padding-bottom: 200px;
 }
 @media (min-width: 769px) {
 .modal__inner {
-  top:3%;
-  right:3%;
-  bottom:3%;
-  left:3%;
+  top:8%;
+  right:8%;
+  bottom:8%;
+  left:8%;
   -webkit-box-shadow: 0px 0px 10px 3px rgba(27, 27, 25, 0.5);
           box-shadow: 0px 0px 10px 3px rgba(27, 27, 25, 0.5)
 }
@@ -1273,8 +1400,8 @@ background-color: transparent;
   opacity: 1;
 }
 .modal--is-visible .modal__inner {
--webkit-transform: scale(1);
-        transform: scale(1);
+-webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg);
   visibility: visible;
   opacity: 1;
 
@@ -1421,7 +1548,10 @@ width: 100%
 
   }
 .toolset dl {margin: 0; padding: 0;}
-.toolset dt {font-size: 17.6px;font-size: 1.1rem; font-weight: 700;}
+.toolset dt {font-size: 20.8px;font-size: 1.3rem; font-weight: 700;
+
+  }
+.toolset dt .ficon {font-size: 20.8px;font-size: 1.3rem;}
 .toolset dd {font-size:14.4px;font-size:0.9rem; font-weight: 300; padding: 0 0 1.25em 0; margin: 0 0 0 10px;}
 /*@import "modules/_article";
 @import "modules/_feature";

@@ -93,8 +93,8 @@ background:#fff;
     background-image: url('../../assets/images/photo-rikk-ogden72.jpg');
 }
 &--rikk-lg {
-    background-image: url('../../assets/images/photo-hero-image-rikk72.jpg');
-    background-position:  center 30%;
+    /* background-image: url('../../assets/images/photo-hero-image-rikk72.jpg');
+    background-position:  center 30%; */
 }
 
   &::after {

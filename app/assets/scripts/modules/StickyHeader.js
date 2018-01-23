@@ -9,7 +9,7 @@ class StickyHeader {
     this.itemTrigger = $(".hero__title");
     this.itemToStick = $(".site-header");
     this.pageSection = $(".page-section");
-    this.navLinks    = $(".site-header a");
+    this.navLinks    = $(".site-header a, .site-footer a");
     this.lazyimages  = $(".lazyload");
 
     this.addSmoothScroll();

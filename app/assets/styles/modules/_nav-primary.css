@@ -42,6 +42,13 @@
   opacity: 0.75;
   transition: opacity .15s linear;
   box-shadow: none;
+
+
+
+}
+
+&--is-current-link {
+  color: #000;
 }
 
 &:hover {

@@ -11225,7 +11225,7 @@ class StickyHeader {
     this.itemTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".hero__title");
     this.itemToStick = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
     this.pageSection = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".page-section");
-    this.navLinks    = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header a");
+    this.navLinks    = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header a, .site-footer a");
     this.lazyimages  = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".lazyload");
 
     this.addSmoothScroll();

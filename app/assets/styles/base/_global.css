@@ -44,6 +44,8 @@ img {
   border: none;
   max-width: 50%;
   margin: 1.2em auto;
+  background: rgba (255,255,255,0);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%);
 
   &--dark {
     background-color: var(--color1);
