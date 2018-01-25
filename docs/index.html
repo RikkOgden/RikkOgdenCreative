@@ -6,8 +6,8 @@
   <title>Page --Title</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <link rel="stylesheet" href="assets/styles/style-1f3feb70ba.css"/>
-  <script src="assets/scripts/vendor-6fab2e7809.js"></script>
+  <link rel="stylesheet" href="assets/styles/style-f8efe13a98.css"/>
+  <script src="assets/scripts/vendor-01475f1e95.js"></script>
 </head>
 <body>
 <div class="wrapper" id="page-top">
@@ -23,7 +23,7 @@
   </div>
   <div class="col col--md__12">
     <nav role="navigation" class="nav-primary">
-      <a href="#services" title="My services">Services</a><a href="#about-me" title="Who is Rikk Ogden?">About</a><a href="#toolset" title="My toolset">Toolset</a><a href="" title="Read my blog">Blog</a><a href="contact" title="Get in touch">Contact</a>
+      <a href="#services" title="My services">Services</a><a href="#about-me" title="Who is Rikk Ogden?">About</a><a href="#toolset" title="My toolset" id="link-toolset">Toolset</a><a href="" title="Read my blog">Blog</a><a href="contact" title="Get in touch">Contact</a>
     </nav>
   </div>
     <a class="site-header__menu-icon" role="button">
@@ -39,7 +39,7 @@
 <div class="grid hero__content">
   <h1 class="hero__title">Digital & Web Design</h1>
   <hr class="hr">
-  <h2 class="hero__subtitle">Website &amp; digital creative design services</h2>
+  <h2 class="hero__subtitle">Front end development & digital creative</h2>
 </div>
 </div>
 
@@ -104,9 +104,9 @@
 </div>
 </article>
 
-<div class="page-section page-section--brand-3" id="about-me">
+<div class="page-section page-section--brand-3" >
 <div class="grid">
-  <section>
+  <section id="about-me">
 
       <div class="ad  ad--left-to-right feature-item">
         <div class="ad__image-wrapper">
@@ -156,16 +156,26 @@
 <div class="modal__scrollable wrapper">
 <article class="grid ">
   <section class="row row--gutters-xl feature" id="AboutMeDescription">
-    <div class="col col--sm__7 col--md__8 ">
+    <div class="col col--md__6 ">
+    <div class="row">
+    <div class="col col--md__8 ">
       <h3 class="feature__header">Work History</h3>
       <h2 class="feature__subheader">February 1998 - October 2017</h2>
-        <p>I am a self-trained digital creative and website designer. For 19 years I worked for a UK travel company, <b>Chadwell Travel Ltd</b>. Trading as <strong>a1travel</strong> (initially trading as 'Premier Leisure'), starting out as a holiday salesman. After a few years it was clear that e-commerce was starting to take off, and we needed a web presence. Having an art and design college background, and a passion for design and technology, I propsed that the company gave me the chance to build the company website.</p>
+    </div>
+    <div class="col col--md__4 ">
+      a1logo here
+    </div>
+
+
+    </div>
+
+    <p>I am a self-trained digital creative and website designer. For 19 years I worked for a UK travel company, <b>Chadwell Travel Ltd</b>. Trading as <strong>a1travel</strong> (initially trading as 'Premier Leisure'), starting out as a holiday salesman. After a few years it was clear that e-commerce was starting to take off, and we needed a web presence. Having an art and design college background, and a passion for design and technology, I propsed that the company gave me the chance to build the company website.</p>
         <p>The company kindly gave me a chance to do this, and so I bought a couple of books on HTML and began my journey to becoming a web professional and began to create what would become a successful independent travel provider website, <strong>a1travel.com.</strong> The rest, they say, is history!</p>
         <p>On my quest, I taught myself HTML, Adobe Fireworks, Adobe Flash, Adobe Photoshop, classic ASP and SQL.</p>
         <p>I created a database and back-end using classic ASP and MS SQL Server to provide a CMS for holiday deals which were advertised and displayed on the website. We had an integrated e-commerce solution from an industry provider. As technology moved on, the company switched to .NET and outsourced to developers to take care of the back-end, whilst I maintained design, front-end, creative media and project management responsibility</p>
         <p>Due to the volatile nature of the industry, on October 20th 2017, the company went into liquidation and I found myself in the unfortunate position of being made redundant.</p>
     </div>
-  <div class="col col--sm__5 col--md__4">
+  <div class="col col--md__6">
   <img src="assets/images/a1travel-grab72.jpg" alt="CHadwell Travel -- a1travel.com">
   </div>
   </section>
@@ -181,7 +191,7 @@
     </div>
     <div class="col col--sm__12 col--md__6">
       <h4 class="feature__header">Current Workflow</h4>
-      <h5 class="feature__subheader">I'm currently using the following for development</h5>
+      <h5 class="feature__subheader">I've recently integrated the following tools into my workflow:</h5>
         <ul class="feature__list">
           <li>Node.JS</li>
           <li>NPM</li>
@@ -202,7 +212,7 @@
       Re-invigorated and with some newfound direction, I now find myself with a thirst for knowlege.
       </p>
       <p>
-      I have spend the time between Ocober 20th and the end of December researching and navigating this vast minefield in order to
+      I have spent the time between Ocober 20th and the end of December researching and navigating this vast minefield in order to
       </p>
     </div>
     <div class="col col--sm__12 col--md__6">
@@ -223,29 +233,31 @@
 
 
 
-<div class="page-section page-section--brand-1" id="toolset">
+<div class="page-section page-section--brand-1 " id="toolset" data-link="link-toolset">
 <article class="grid toolset">
-<h2>Tools &amp; Tech</h2>
-<section class="row row--gutters-xl">
+<h2>I use the following tools in my current workflow</h2>
+<section class="row row--gutters-xl feature-item">
 <div class="col col--md__6">
   <dl>
-    <dt>Node.JS / NPM</dt>
+    <dt><i class="ficon ficon--boxed  ficon-npm" aria-hidden="true"></i> Node.JS / npm</dt>
     <dd>So I can use various awesome packages to aid my workflow</dd>
-    <dt>JS / JQuery</dt>
-    <dd>Althought I mainly use JQuery for UI events, I have started to dabble in ES6 in conjuction with babel</dd>
-    <dt>Gulp</dt>
+    <dt><i class="ficon ficon--boxed  ficon-jquery" aria-hidden="true"></i> JQuery</dt>
+    <dd>For UI and DOM manipulation</dd>
+    <dt><i class="ficon ficon--boxed  ficon-gulp" aria-hidden="true"></i> Gulp</dt>
     <dd>Tasks for automation, eg. sprite generation, minifying files, image optimisation, postcss aswell as build and watch tasks using Browsersync</dd>
-    <dt>Postcss</dt>
+    <dt><i class="ficon ficon--boxed  ficon-postcss" aria-hidden="true"></i> Postcss</dt>
     <dd>For highy organised, modular autoprefixed CSS</dd>
   </dl>
 </div>
 <div class="col col--md__6">
   <dl>
-    <dt>GIT and GitHub</dt>
+    <dt><i class="ficon ficon--boxed  ficon-git" aria-hidden="true"></i> Git</dt>
     <dd>For version control</dd>
-    <dt>Adobe Illustrator</dt>
+    <dt><i class="ficon ficon--boxed ficon-github" aria-hidden="true"></i> GitHub</dt>
+    <dd>My Github page can be found <a>here</a></dd>
+    <dt><i class="ficon ficon--boxed ficon-adobeillustrator" aria-hidden="true"></i> Adobe Illustrator</dt>
     <dd>For vector and iconography</dd>
-    <dt>Adobe Photoshop</dt>
+    <dt><i class="ficon ficon--boxed ficon-adobephotoshop" aria-hidden="true"></i> Adobe Photoshop</dt>
     <dd>Although I typically design in the browser, I use this for general imagery, banners, etc</dd>
   </dl>
 </div>
@@ -256,18 +268,25 @@
 </main>
 
 <footer class="site-footer" role="contentinfo">
-<ul class="nav-secondary">
-<li><a>RikkOgdenCreative</a></li>
-<li><a>About</a></li>
-<li><a>Toolset</a></li>
-<li><a>Contact</a></li>
-<li><a>Email</a></li>
-</ul>
-<ul class="social-networks">
-  <li>Facebook</li>
-  <li>LinkedIn</li>
-  <li>Pinterest</li>
-</ul>
+<div class="grid">
+<div class="row row--gutters-xl">
+<div class="col col--md__12">
+<a class="site-footer__logo" href="#page-top" role="button">
+<div class="icon icon--logo"></div>
+</a>
+</div>
+<div class="col col--md__6 site-footer__links">
+<a>About</a><a>Toolset</a><a>Contact</a><a>Email</a>
+</div>
+<div class="col col--md__6 site-footer__social">
+
+  LinkedIn Pinterest
+</div>
+<div class="col col--md__12 site-footer__small">
+&copy;2018 Rikk Ogden.
+</div>
+</div>
+</div>
 </footer>
 
 
@@ -281,7 +300,7 @@
 
 </body>
 
-<script src="assets/scripts/app-f4d4ddda1c.js"></script>
+<script src="assets/scripts/app-3c050bd46e.js"></script>
 </html>
 <script>
 

@@ -28,6 +28,9 @@ gulp.task('deleteDocsFolder',  function(){
   return deleteFolder('./docs');
 })
 
+
+
+
 gulp.task('copyGeneralFiles', ['deleteDocsFolder'], function () {
   var paths = [
     './app/temp/**/*',
@@ -36,6 +39,15 @@ gulp.task('copyGeneralFiles', ['deleteDocsFolder'], function () {
   ]
   return gulp.src(paths)
   .pipe(gulp.dest('./docs/assets/'))
+});
+
+gulp.task('copyFonts', ['deleteDocsFolder'], function () {
+  var paths = [
+    './app/assets/fonts/**/*'
+
+  ]
+  return gulp.src(paths)
+  .pipe(gulp.dest('./docs/assets/fonts/'))
 });
 
 gulp.task('optimiseImages', ['deleteDocsFolder'], function () {
@@ -74,4 +86,4 @@ gulp.task('handleJs', ['deleteDistFolder'], function (cb) {
 });
 */
 
-gulp.task('build', ['deleteDocsFolder', 'icons', 'optimiseImages',  'useminTrigger']);
+gulp.task('build', ['deleteDocsFolder', 'copyFonts', 'icons', 'optimiseImages',  'useminTrigger']);
