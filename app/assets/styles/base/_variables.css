@@ -1,4 +1,18 @@
 :root {
 --color1: #2ab7ca;
 --color2: #353531;
+
+
+--heading-lg: {
+  font-size:2rem;
+  line-height:1.2;
+  font-weight:400;
+};
+
+--heading-md: {
+  font-size:1.4rem;
+  line-height:1.2;
+  font-weight:300;
+};
+
 }

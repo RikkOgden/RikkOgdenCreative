@@ -4,6 +4,12 @@
     position: relative;
     z-index: 1;
     background: #fff;
+    width:100%;
+
+  @mixin atMedium {
+
+      padding:4rem 0 4rem 0;
+  }
 
   &--brand-1 {
     background:var(--color1);

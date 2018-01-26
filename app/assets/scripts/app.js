@@ -5,4 +5,7 @@ import Modal from './modules/Modal';
 new MobileMenu('.site-header__menu-icon', '.nav-primary');
 new RevealOnScroll('.feature-item', '100%');
 new StickyHeader();
-new Modal();
+new Modal('.button--open-work-history', '#work-history');
+new Modal('.button--open-websites', '#websites');
+new Modal('.button--open-creative', '#creative');
+new Modal('.button--open-bespoke', '#bespoke');

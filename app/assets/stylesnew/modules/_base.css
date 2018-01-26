@@ -1,0 +1,13 @@
+.teststyle {
+  &--testmodifier {
+  @apply --heading-lg;
+  }
+  &--secondtestmodifier {
+  @apply --heading-xl;
+  }
+  @apply --heading-xl;
+  @mixin atSmall {
+  @apply --heading-lg;
+  }
+
+}

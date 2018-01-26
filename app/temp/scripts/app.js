@@ -11103,7 +11103,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]('.site-header__menu-icon', '.nav-primary');
 new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.feature-item', '100%');
 new __WEBPACK_IMPORTED_MODULE_2__modules_StickyHeader__["a" /* default */]();
-new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]();
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-work-history', '#work-history');
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-websites', '#websites');
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-creative', '#creative');
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-bespoke', '#bespoke');
 
 
 /***/ }),
@@ -11681,42 +11684,33 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 class Modal {
 
-  constructor() {
-    this.open = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".button--open-modal");
-    this.close = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".button--close-modal, .modal__overlay");
-    this.modal = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("#work-history");
+  constructor(trigger, target) {
+    this.open =         __WEBPACK_IMPORTED_MODULE_0_jquery___default()(trigger);
+    this.close =        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(target +" .button--close-modal");
+    this.overlayclose = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".modal__overlay");
+    this.modal =        __WEBPACK_IMPORTED_MODULE_0_jquery___default()(target);
     this.events();
-    this.onEscape();
+    
 
   }
 
-  onEscape() {
-    this.on('keyup', function(evt) {
-      if (evt.keyCode == 27) {
-        this.close.click(this.closeModal.bind(this));
-      }
-    });
-  }
+
 
   events() {
     this.open.click(this.openModal.bind(this));
+    console.log(this.modal);
     this.close.click(this.closeModal.bind(this));
+    this.overlayclose.click(this.closeModal.bind(this));
   }
 
   openModal() {
 
-    //var curScrollTop = $(window).scrollTop();
     __WEBPACK_IMPORTED_MODULE_0_jquery___default()("html").addClass("noscroll");
     this.modal.addClass("modal--is-visible");
     this.modal.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(e) {
-      __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#work-history .button--close-modal').focus();
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(' .button--close-modal').focus();
     });
-
-    //setTimeout(function() { $('.button--close-modal').focus() }, 1500);
-
-    //.css('top', '-' + curScrollTop + 'px');
     return false;
-
   }
 
   closeModal() {
