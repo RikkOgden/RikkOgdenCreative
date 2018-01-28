@@ -69,13 +69,22 @@ margin-right:-35px;
 padding-right:35px;
 }
 
+&--gutters-xxl {
+margin-right:-100px;
+}
+
+&--gutters-xxl > .col{
+padding-right:100px;
+}
+
 > .col {
   position: relative;
   float:left;
   width:100%;
+  @mixin clearfix;
 
 
-  &--no-stack {
+  &--nostack {
     min-height:1px;
     &__1 {width: 8.333%;}
     &__2 {width: 16.66%;}
@@ -125,7 +134,7 @@ padding-right:35px;
 }
 
 .flexbox &--equal-heights {
-    @mixin atMedium {
+@mixin atMedium {
 display: flex;
 
 & > .col {
@@ -136,4 +145,17 @@ display: flex;
 }
 }
 
+}
+
+.hide-sm {
+@mixin maxMedium{
+display:none;
+}
+}
+
+
+.hide-md {
+@mixin atMedium{
+display:none;
+}
 }

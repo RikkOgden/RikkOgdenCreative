@@ -1,16 +1,17 @@
 .toolset {
 
-  color:#fff;
+  color: var(--color1--light-3);
 
-  &__tools-list {
+@mixin atMedium {
 
-  }
+}
 
-  & dl {margin: 0; padding: 0;}
+
+  & dl {margin: 0 0 0 0; padding: 0;}
   & dt {font-size: 1.3rem; font-weight: 700;
 
-    & .ficon {font-size: 1.3rem;}
+    & .ficon {font-size: 1.3rem; display: inline-block;}
 
   }
-  & dd {font-size:0.9rem; font-weight: 300; padding: 0 0 1.25em 0; margin: 0 0 0 10px;}
+  & dd {font-size:0.9rem; font-weight: 300; padding: 0 0 2em 0; margin: 0 0 0 10px;}
 }

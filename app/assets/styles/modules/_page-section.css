@@ -1,26 +1,32 @@
 .page-section {
 @mixin clearfix;
-  padding:2rem 0 2rem 0;
-    position: relative;
-    z-index: 1;
-    background: #fff;
-    width:100%;
+padding:2rem 0 2rem 0;
+position: relative;
+z-index: 1;
+width:100%;
 
+&--mgn-v-offset {
   @mixin atMedium {
+  position: relative;
+  margin-top: -10rem;
+}
 
-      padding:4rem 0 4rem 0;
-  }
+}
 
-  &--brand-1 {
-    background:var(--color1);
-  }
+@mixin atMedium {
+padding:4rem 0 4rem 0;
+}
 
-  &--brand-2 {
-    background: color(var(--color2) tint(69%) alpha(1));
-  }
+&--brand-1 {
+background:var(--color1);
+}
 
-  &--brand-3 {
-    background: color(var(--color2) tint(92%) alpha(1));
-  }
+&--brand-2 {
+background: color(var(--color2) tint(69%) alpha(1));
+}
+
+&--brand-3 {
+background: var(--color2--light-3);
+}
 
 }

@@ -16,7 +16,7 @@
   right:0;
   bottom:0;
   left:0;
-  background: color(var(--color2)  alpha(.95));
+  background: color(var(--color2) shade(30%) alpha(.95));
   z-index: 0;
   opacity: 0;
   transition: 0.3s;

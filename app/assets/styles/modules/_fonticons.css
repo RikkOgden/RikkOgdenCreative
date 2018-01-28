@@ -36,6 +36,33 @@ i.ficon {
 
 }
 
+.ficon-chevron-left:before {
+  content: "\f053";
+}
+.ficon-chevron-right:before {
+  content: "\f054";
+}
+.ficon-chevron-up:before {
+  content: "\f077";
+}
+.ficon-chevron-down:before {
+  content: "\f078";
+}
+
+.ficon-email:before {
+  content: "\e911";
+}
+.ficon-pdf:before {
+  content: "\e90f";
+}
+.ficon-mobile:before {
+  content: "\e910";
+}
+
+.ficon-download:before {
+  content: "\e90d";
+}
+
 .ficon-postcss:before {
   content: "\e90a";
   color: #dc3a0d;

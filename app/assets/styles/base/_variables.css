@@ -1,6 +1,45 @@
 :root {
---color1: #2ab7ca;
---color2: #353531;
+--color1: #B84A62;
+--color2: #242F40;
+
+/*theme1 */
+--color1: #1282A2;
+--color2: #1C3144;
+--color3: #401F3E;
+
+/*theme2 */
+--color1: #1282A2;
+--color2: #1C3144;
+--color3: #F18805;
+
+/*theme4 */
+--color1: #1282A2;
+--color2: #1C3144;
+--color3: #C94277;
+
+/*theme3 */
+--color1: #1282A2;
+    --color1--light-1: color(var(--color1) tint(20%));
+    --color1--light-2: color(var(--color1) tint(40%));
+    --color1--light-3: color(var(--color1) tint(85%));
+--color2: #1C3144;
+    --color2--light-1: color(var(--color2) tint(30%));
+    --color2--light-2: color(var(--color2) tint(40%));
+    --color2--light-3: color(var(--color2) tint(90%));
+    --color2--light-2-alpha-1: color(var(--color2) tint(70%) alpha(1));
+    --color2--light-2-alpha-0: color(var(--color2) tint(70%) alpha(0));
+--color3: #084C61;
+    --color3--light-1: color(var(--color3) tint(30%));
+    --color3--light-2: color(var(--color3) tint(50%));
+    --color3--light-3: color(var(--color3) tint(90%));
+
+
+--heading-xl: {
+  font-size:2.5rem;
+  line-height:1.2;
+  font-weight:400;
+};
+
 
 
 --heading-lg: {
