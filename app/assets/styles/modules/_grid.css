@@ -9,6 +9,12 @@
 
   @mixin atMedium {
   max-width:1200px;
+
+
+  &--mt-md {margin-top:15px; }
+  &--mt-lg {margin-top:25px; }
+  &--mt-xl {margin-top:35px; }
+
 }
 
 &--sm {
@@ -34,9 +40,7 @@ display: block;
 
 @mixin clearfix;
 
-&--m-md {margin-top:15px; margin-bottom: 15px;}
-&--m-lg {margin-top:25px; margin-bottom: 25px;}
-&--m-xl {margin-top:35px; margin-bottom: 35px;}
+
 
 &--m-negative-t-atMedium {
   margin-top:-4rem;
@@ -46,42 +50,43 @@ display: block;
 
 
 &--gutters-md {
-margin-right:-15px;
+margin:0 -8px;
 }
 
 &--gutters-md > .col{
-padding-right:15px;
+padding:0 8px;
 }
 
 &--gutters-lg {
-margin-right:-25px;
+margin:0 -12px;
 }
 
 &--gutters-lg > .col{
-padding-right:25px;
+padding:0 12px;
 }
 
 &--gutters-xl {
-margin-right:-35px;
+margin:0 -16px;
 }
 
 &--gutters-xl > .col{
-padding-right:35px;
+padding:0 16px;
 }
 
 &--gutters-xxl {
-margin-right:-100px;
+margin:0 -50px;
 }
 
 &--gutters-xxl > .col{
-padding-right:100px;
+padding:0 50px;
 }
 
 > .col {
+
   position: relative;
   float:left;
   width:100%;
-  @mixin clearfix;
+
 
 
   &--nostack {
@@ -117,7 +122,7 @@ padding-right:100px;
 }
 
   @mixin atMedium {
-  min-height:1px;
+
   &--md__1 {width: 8.333%;}
   &--md__2 {width: 16.66%;}
   &--md__3 {width: 25%;}

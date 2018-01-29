@@ -41,6 +41,7 @@
     "postcss-url": "^7.3.0",
     "pump": "^2.0.0",
     "uglify-es": "^3.3.5",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "zenscroll": "^4.0.0"
   }
 }

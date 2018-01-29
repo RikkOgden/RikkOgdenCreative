@@ -11103,10 +11103,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 new __WEBPACK_IMPORTED_MODULE_0__modules_MobileMenu__["a" /* default */]('.site-header__menu-icon', '.nav-primary');
 new __WEBPACK_IMPORTED_MODULE_1__modules_RevealOnScroll__["a" /* default */]('.feature-item', '100%');
 new __WEBPACK_IMPORTED_MODULE_2__modules_StickyHeader__["a" /* default */]();
-new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-work-history', '#work-history');
-new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-websites', '#websites');
-new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-creative', '#creative');
-new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-bespoke', '#bespoke');
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-work-history', '#modal-workhistory');
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-websites', '#modal-websites');
+new __WEBPACK_IMPORTED_MODULE_3__modules_Modal__["a" /* default */]('.button--open-creative', '#modal-creative');
 
 
 /***/ }),
@@ -11239,7 +11238,7 @@ class StickyHeader {
 
     addSmoothScroll (){
     this.navLinks.smoothScroll({
-      offset: -70
+    
     });
   }
 

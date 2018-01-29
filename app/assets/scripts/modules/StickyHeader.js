@@ -20,7 +20,7 @@ class StickyHeader {
 
     addSmoothScroll (){
     this.navLinks.smoothScroll({
-      offset: -70
+    
     });
   }
 

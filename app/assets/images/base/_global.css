@@ -42,12 +42,6 @@ img {
   height: auto;
 }
 
-img.native {
-  width: auto;
-  max-width: auto;
-  height: auto;
-}
-
 .centered {text-align: center;}
 
 

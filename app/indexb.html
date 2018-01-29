@@ -3,7 +3,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>Page --Title</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
@@ -15,14 +14,13 @@
   <!-- endbuild -->
 </head>
 <body>
-<div id="page-top"></div>
-<div class="wrapper">
+<div class="wrapper" id="page-top">
 <header class="site-header" role="banner">
 <div class="grid">
   <div class="row">
     <div class="col col--md__4">
       <a class="site-header__logo" href="#page-top" title="Rikk Ogden Creative">
-        <div class="icon icon--roc-logo">
+        <div class="icon icon--logo">
           Rikk Ogden Creative. Front End Web and Graphic Design.
         </div>
     </a>
@@ -50,10 +48,10 @@
 </div>
 
 <main role="main">
-<article class="page-section page-section--mgn-v-offset" id="services">
+<article class="page-section page-section--mgn-v-offset" id="services" >
 <h2 class="offset-display">Creative Services</h2>
 <div class="grid">
-<section class="row row--gutters-xl  row--equal-heights">
+<section class="row row--gutters-xl  row--equal-heights" id="usp">
   <div class="col col--sm__6 col--md__6">
     <div class="ad ad--shadow ad--hover-animation feature-item">
       <div class="ad__image-wrapper">
@@ -68,7 +66,7 @@
       <div class="ad__content hide-sm">
         <p>I design and build website front-ends with a mobile-first approach with semantic html5 and css3</p>
           <hr class="hr hr--dark">
-        <p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button  button--open-websites">Take a Peek</a></p>
+        <p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button button--brand-1 button--open-websites">Find Out More <i class="ficon ficon-chevron-right" aria-hidden="true"></i></a></p>
       </div>
       <div class="ad__badges">
       <img src="assets/images/icons/css3.svg">
@@ -81,24 +79,42 @@
   <div class="ad__image-wrapper">
     <div class="ad__image ad__image--devices"></div>
       <div class="ad__image-content heading-group heading-group--white heading-group--md">
-        <h2 class="heading-group__title">Creative</h2>
+        <h2 class="heading-group__title">Creatives</h2>
         <hr class="hr">
         <h3 class="heading-group__subtitle">Web Banners &amp; Email Marketing</h3>
         <p class="hide-md"><a class="button button--brand-1 button--open-creative">Find Out More <i class="ficon ficon-chevron-right" aria-hidden="true"></i></a></p>
       </div>
   </div>
   <div class="ad__content hide-sm">
-    <p>I can design and create both static and animated web banners, social media ads and imagery, html emails, logos and more.</p>
+    <p>I can design and build static banners, email marketing and eye-catching animated HTML banners</p>
       <hr class="hr hr--dark">
-<p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button  button--open-creative">Take a Peek</a></p>
+<p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button button--brand-1 button--open-creative">Find Out More <i class="ficon ficon-chevron-right" aria-hidden="true"></i></a></p>
   </div>
 </div>
 </div>
+<!-- <div class="col col--sm__12 col--md__4">
+  <div class="ad ad--shadow ad--hover-animation  ad--no-mgn-b feature-item">
+    <div class="ad__image-wrapper">
+      <div class="ad__image ad__image--websites"></div>
+        <div class="ad__image-content heading-group heading-group--white heading-group--md">
+          <h2 class="heading-group__title">Bespoke Design</h2>
+          <hr class="hr">
+          <h3 class="heading-group__subtitle">Fully tailored</h3>
+          <p class="hide-md"><a class="button button--brand-1  button--open-creative">Find Out More <i class="ficon ficon-chevron-right" aria-hidden="true"></i></a></p>
+        </div>
+    </div>
+    <div class="ad__content hide-sm">
+      <p>I don't normally use boilerplates. My code is my own, meaning less bloat and fully tailored sites with minimum file sizes.</p>
+        <hr class="hr hr--dark">
+<p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button button--brand-1  button--open-creative">Find Out More <i class="ficon ficon-chevron-right" aria-hidden="true"></i></a></p>
+    </div>
+  </div>
+</div> -->
 </section>
 </div>
 </article>
 
-<div class="modal wrapper" id="modal-websites" role="dialog" aria-labelledby="WebsiteExamples" aria-describedby="WebsiteExamplesDescription">
+<div class="modal wrapper" id="websites" role="dialog" aria-labelledby="WebsiteExamples" aria-describedby="WebsiteExamplesDescription">
 <a class="modal__overlay"></a>
 <div class="modal__inner">
 <button class="modal__btn__close button--close-modal"  title="close this dialog">
@@ -108,11 +124,11 @@
 
 <div class="ad">
   <div class="ad__image-wrapper">
-    <div class="ad__image ad__image ad__image--devices"></div>
-      <div class="ad__image-content heading-group heading-group--white heading-group--md">
-        <h2 class="heading-group__title">Websites</h2>
+    <div class="ad__image ad__image--rikk-lg"></div>
+      <div class="ad__image-content">
+        <h2 class="ad__image-text ad__image-text--header" id="WebsiteExamples">Websites</h2>
         <hr class="hr">
-        <h3 class="heading-group__subtitle">Examples of sites and front-end work</h3>
+        <h3 class="ad__image-text ad__image-text--subheader">Examples of websites &amp; front-ends</h3>
 
       </div>
   </div>
@@ -134,7 +150,7 @@
 </div>
 
 
-<div class="modal wrapper" id="modal-creative" role="dialog" aria-labelledby="CreativeExamples" aria-describedby="CreativeDescription">
+<div class="modal wrapper" id="creative" role="dialog" aria-labelledby="CreativeExamples" aria-describedby="CreativeDescription">
 <a class="modal__overlay"></a>
 <div class="modal__inner">
 <button class="modal__btn__close button--close-modal"  title="close this dialog">
@@ -158,20 +174,27 @@
 <article class="examples">
 <div class="page-section">
 <div class="grid">
-<section class="row row--gutters-xl">
-<div class="heading-group heading-group--md heading-group--bottom-margin-sm">
-<h5 class="heading-group__title">CruiseSoon Logo</h5>
-<hr class="hr hr--dark">
-<h6 class="heading-group__subtitle">Online cruise agency</h6>
+<section class="row row--gutters-xxl">
+<div class="heading-group heading-group--md">
+<h3 class="heading-group__title">Logos</h3>
 </div>
-<div class="col col--md__6">
-<img src="assets/images/logo-cruisesoon-blue.png" alt="cruise soon logo composition">
+
+<div class="col col--md__4">
+<img src="assets/images/cs-logo-comp-1.svg" alt="cruise soon composition">
 </div>
-<div class="col col--md__6">
-<img src="assets/images/logo-cruisesoon-white.png" alt="cruise soon logo composition">
+<div class="col col--md__8">
+<p>
+Logo comp for cruisesoon. No design brief so I went for a simple graphic made up from the golden ratio rule, along with blues to provoke both the sea, and trust.
+</p>
 </div>
-<div class="col centered">
-<p>I was not given a design brief so I came up with something that I liked. I used the nintendo switch logo as inspiration, and I wanted something that would sit well on a coloured background. I selected blue to convey both the ocean, and trust.</p>
+<div class="col col--md__12"></div>
+<div class="col col--md__4">
+<img src="assets/images/a1travel-logo.png" alt="a1travel logo">
+</div>
+<div class="col col--md__8">
+<p>
+Logo comp for cruisesoon. No design brief so I went for a simple graphic made up from the golden ratio rule, along with blues to provoke both the sea, and trust.
+</p>
 </div>
 </section>
 </div>
@@ -179,92 +202,83 @@
 
 <div class="page-section page-section--brand-3">
 <div class="grid">
-<section class="row row--gutters-xl">
-<div class="heading-group heading-group--md heading-group--bottom-margin-sm">
-<h5 class="heading-group__title">A1Travel Logo</h5>
-<hr class="hr hr--dark">
-<h6 class="heading-group__subtitle">Online travel agency</h6>
+<section class="row row--gutters-xxl">
+<div class="heading-group heading-group--md">
+<h3 class="heading-group__title">Banners</h3>
 </div>
-<div class="col centered">
-<img src="assets/images/logo-a1travel.png" alt="cruise soon logo composition" class="native">
+
+<div class="col col--md__4">
+<img src="assets/images/cs-logo-comp-1.svg" alt="cruise soon composition">
 </div>
-<div class="col centered">
-<p>This one was the logo for the main brand of the company I worked for for 19 years.</p>
+<div class="col col--md__8">
+<p>
+Logo comp for cruisesoon. No design brief so I went for a simple graphic made up from the golden ratio rule, along with blues to provoke both the sea, and trust.
+</p>
+</div>
+
+<div class="col col--md__4">
+<img src="assets/images/a1travel-logo.png" alt="a1travel logo">
+</div>
+<div class="col col--md__8">
+<p>
+Logo comp for cruisesoon. No design brief so I went for a simple graphic made up from the golden ratio rule, along with blues to provoke both the sea, and trust.
+</p>
 </div>
 </section>
 </div>
 </div>
-
-
-
-
-
-<div class="page-section">
-<div class="grid">
-<section class="row row--gutters-xl">
-<div class="heading-group heading-group--md heading-group--bottom-margin-sm">
-<h5 class="heading-group__title">Web Banners</h5>
-<hr class="hr hr--dark">
-<h6 class="heading-group__subtitle">Various companies</h6>
-</div>
-<div class="col centered">
-<img src="assets/images/web-banners.jpg" alt="cruise soon logo composition" class="native">
-</div>
-<div class="col centered">
-<p>This one was the logo for the main brand of the company I worked for for 19 years.</p>
-</div>
-</section>
-</div>
-</div>
-
 </article>
 </div>
 </div>
 </div>
 
-<div class="page-section page-section--brand-3 " id="about-me">
-<section class="about-me">
+<div class="page-section page-section--brand-3" id="about-me"  >
+
+<section class="feature-item">
   <div class="grid grid--md">
   <div class="heading-group heading-group--bottom-margin">
   <h2 class="heading-group__title">About Me</h2>
   <hr class="hr hr--dark">
   <h3 class="heading-group__subtitle">What is my name? What is my quest? What is my favourite colour?</h3>
   </div>
-<div class="row row--gutters-xl generic-content">
-<div class="col col--md__6">
-<img src="assets/images/rikk-ogden.jpg" alt="Rikk Ogden" title="Photo Of Rikk Ogden">
-</div>
-<div class="col col--md__6">
-My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media designer. I'm also a husband and a father, a keen music lover and an noob video gamer.
-<p>Having a passion for design and technology, my <b>quest</b> is to continue to grow as a front-end developer, improve my programming and learn React.</p>
-<p>My <b>favourite colour</b> depends on my mood. Currently its <b class="brand-3">#401F3E</b>.</p>
-
-</div>
-</div>
-</div>
-
-<div class="grid grid--sm grid--mt-lg centered">
 <div class="row row--gutters-xl">
-<div class="col col--md__12">
-<div class="about-me__button-group">
-<p><a class="button button--lg button--brand-1 button--fw button--open-work-history" role="button">Work History & Experience</a></p>
+<div class="col col--md__6">
+<div class="ad">
+<div class="ad__image-wrapper">
+<div class="ad__image ad__image--rikk"></div>
+<div class="ad__image-content">
+<h2 class="ad__image-text ad__image-text--header">About Me</h2>
+<hr class="hr">
+</div>
+</div>
+</div>
+</div>
+<div class="col col--md__6">
+<p>My <b class="brand-1">name</b> is Rikk Ogden and I've been a self-trained digital creative and website designer for over a decade.</p>
+<p>Having a passion for design and technology, my <b class="brand-1">quest</b> is to continue to grow as a front-end developer.</p>
+<p>My <b class="brand-1">favourite colour</b> is <span class="feature__favourite-colour">purple</span>.</p>
+</div>
+</div>
+</div>
 
-<p><hr class="hr hr--dark"></p>
-<p><a class="button " href="downloads/rikk-ogden-cv.pdf" role="button" download>Download my CV <i class="ficon ficon-download" aria-hidden="true"></i></a>
-</p>
+<div class="grid grid--sm grid--mt-lg">
+<div class="row row--gutters-xl">
+<div class="col col--md__6">
+<p class="centered"><a class="button button--lg button--fw" href="downloads/rikk-ogden-cv.pdf" role="button" download>Download my CV <i class="ficon ficon-download" aria-hidden="true"></i></a>
 <i class="ficon ficon-pdf" aria-hidden="true"></i> <small> Format: PDF | File size: 100kb</small>
+</p>
+</div>
+<div class="col col--md__6">
+<p><a class="button button--lg button--fw button--open-work-history" href="" role="button">Work History & Experience</a></p>
 </div>
 </div>
 </div>
-</div>
-
-
 </section>
 
 </div>
 
 <!--modal-about-me -->
-<div class="modal wrapper" id="modal-workhistory" role="dialog" aria-labelledby="WorkHistoryTitle" aria-describedby="WorkHistoryDescription">
+<div class="modal wrapper" id="work-history" role="dialog" aria-labelledby="AboutMeTitle" aria-describedby="AboutMeDescription">
 <a class="modal__overlay"></a>
 <div class="modal__inner">
 <button class="modal__btn__close button--close-modal"  title="close this dialog">
@@ -272,17 +286,17 @@ My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media d
 <div class="modal__btn__close__x modal__btn__close__x--right"></div>
 </button>
 
-<div class="ad">
-  <div class="ad__image-wrapper">
-    <div class="ad__image ad__image ad__image--devices"></div>
-      <div class="ad__image-content heading-group heading-group--white heading-group--md">
-        <h2 class="heading-group__title">Work History &amp; Experience</h2>
-        <hr class="hr">
-        <h3 class="heading-group__subtitle">Where I began to where I am now</h3>
+  <div class="ad">
+    <div class="ad__image-wrapper">
+      <div class="ad__image ad__image--websites"></div>
+        <div class="ad__image-content">
+          <h2 class="ad__image-text ad__image-text--header" id="AboutMeTitle">Work History</h2>
+          <hr class="hr">
+          <h3 class="ad__image-text ad__image-text--subheader">Where it all started to today &amp; beyond...</h3>
 
-      </div>
+        </div>
+    </div>
   </div>
-</div>
 
 <div class="modal__scrollable wrapper">
 <article>
@@ -290,52 +304,39 @@ My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media d
   <div class="grid">
   <section class="row row--gutters-xxl work-history">
     <div class="col col--md__6 ">
-      <div class="heading-group heading-group--md heading-group--bottom-margin-sm">
-      <h3 class="heading-group__title">Chadwell Travel Ltd</h3>
-      <h2 class="heading-group__subtitle">February 1998 - October 2017</h2>
+    <div class="row">
+    <div class="col col--md__8 ">
+      <h3 class="work-history__header">Work History</h3>
+      <h2 class="work-history__subheader">February 1998 - October 2017</h2>
     </div>
+    <div class="col col--md__4 ">
+    <img src="assets/images/a1travel-logo.png" alt="a1travel.com">
+    </div>
+  </div>
 
-
-      <p>I started as a holiday salesman back in 1998 for Chadwell Travel Ltd. After a few years, The company needed a web presence, and having a background in art and a keen interest in technology, I was given the opportunity to see if I could build something. I bought a book on HTML and after a couple of months I had created the company's very first website.</p>
-      <p>Over the course of the next decade I would continue to grow and evolve the website from it's beginnings as premier-leisure.com (a simple website with a framed third-party ecommerce solution) to a rebrand into a1travel.com. This would become the main brand and online-bookable sales platform for the company until the collapse of Monarch Airlines in October 2017 forced us into liquidation.</p>
-      <p>To my knowledge, we were one of the first UK online travel agency sites to go responsive.</p>
-      <p> By the end of the company's lifecycle I maintained responsibility for branding, front end design and development, email &amp; web marketing and managing a dev team in India with whom we had outsourced the back-end and server side responsibilites.</p>
-
-
+    <p>For 19 years I worked for a UK travel company, <b>Chadwell Travel Ltd</b>. Trading as <strong>a1travel</strong> (initially trading as 'Premier Leisure'). I started out as a holiday salesman. After a few years it was clear that we needed a web presence. Having an art background, and a passion for design and technology, I propsed that the company gave me the chance to build the company website.</p>
+      <p>I bought a book on HTML and after a couple of months I had created the company's very first website, and so began my journey to becoming a web professional.</p>
+      <p>Over the course of the next decade I would continue to grow and evolve the website. From it's beginnings as premier-leisure.com - a simple website with a framed third-party ecommerce solution, to a rebrand into a1travel.com which became the main company sales platform, and a successful online-bookable travel agency.</p>
+    </p>Over the site's evolution, my responsibilities included all design and front-end development, some back-end development using classic ASP and MS SQL and eventually project managing outsourced .NET back-end development, whilst maintaining responsive design, front-end dev, some dynamic ASP driven landing pages using both XML and CMS solutions, and email marketing responsibilities.</p>
+      <p>I would also be responsible for two other sister websites; Bargainholidaysonline, and </p>
+      <p>Due to the volatile nature of the industry, on October 20th 2017, the company went into liquidation and I found myself in the unfortunate position of being made redundant.</p>
     </div>
   <div class="col col--md__6">
   <img src="assets/images/a1travel-screens72.png" alt="Chadwell Travel -- a1travel.com">
   </div>
-
   </section>
-  <section class="row row--gutters-xxl">
-    <div class="col">
-    <p>As I was solely responsible for the website for the first half of its life, I would gain experience in a range of technology.</p>
-    <dl>
-      <dt>HTML, CSS, Adobe Fireworks, Adobe Flash and Jquery</dt>
-      <dd>These were my primary design and front-end development tools</dd>
-      <dt>Classic ASP</dt>
-      <dd>I built an intranet with a CMS, a CMS and dynamic pages for website offers</dd>
-      <dt>MS SQL Server / SQL</dt>
-      <dd>I built a database for both of the above, gaining a good understanding of DB concepts and SQL syntax.</dd>
-    </dl>
-    </div>
-  </section>
-  </div>
-</div>
-
+</div></div>
 
 <div class="page-section page-section--brand-3">
   <div class="grid">
   <section class="row row--gutters-xxl feature work-history">
     <div class="col col--sm__12 col--md__6">
-      <div class="heading-group heading-group--md">
-      <h3 class="heading-group__title">Man Overboard</h3>
-      <h2 class="heading-group__subtitle">October 2017 - December 2017</h2>
-    </div>
+      <h3 class="work-history__header">Man Overboard</h3>
+      <h2 class="work-history__subheader">October 2017 - December 2017</h2>
       <p>Finding myself without a job and in open waters I began to do some research and I realised that over the course of the last few years I had stagnated a little. I found myself in the position of feeling adrift in a sea of new technology.
       </p>
-      <p>To that end I spent the time between October 20th 2017 and the end of December 2017 researching, learning and adapting to the modern workflow.</p>
+      <p>To that end I spent the time between October 20th 2017 and the end of December 2017 researching and adapting to the modern workflow and integrating into my own methodologies.
+      </p>
     </div>
     <div class="col col--sm__12 col--md__6">
       <div class="work-history__toolset">
@@ -433,7 +434,7 @@ My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media d
 <div class="row row--gutters-xl">
 <div class="col col--md__12">
 <a class="site-footer__logo" href="#page-top" role="button">
-<div class="icon icon--roc-logo"></div>
+<div class="icon icon--logo"></div>
 </a>
 </div>
 <div class="col col--md__6 site-footer__links">
