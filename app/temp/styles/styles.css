@@ -586,6 +586,13 @@ max-width:1230px;
 
 }
 @media (min-width: 769px) {
+.grid--xsm {
+max-width:510px;
+
+}
+
+}
+@media (min-width: 769px) {
 .grid--sm {
 max-width:830px;
 
@@ -1040,6 +1047,8 @@ display: inline-block;
   text-align: center;
   font-size: 20.8px;
   font-size: 1.3rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .site-footer__social {
   text-align: center;

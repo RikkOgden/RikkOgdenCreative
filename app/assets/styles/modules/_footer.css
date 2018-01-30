@@ -24,6 +24,7 @@
 &__contact{
   text-align: center;
   font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 &__social {

@@ -19,6 +19,12 @@ padding: 0 15px;
 
 }
 
+&--xsm {
+  @mixin atMedium {
+  max-width:510px;
+}
+}
+
 &--sm {
   @mixin atMedium {
   max-width:830px;
