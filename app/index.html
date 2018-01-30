@@ -22,7 +22,7 @@
 <body>
 <div id="page-top"></div>
 <div class="wrapper">
-<header class="site-header" role="banner">
+<header class="site-header">
 <div class="grid">
   <div class="row">
     <div class="col col--md__4">
@@ -33,7 +33,7 @@
     </a>
   </div>
   <div class="col col--md__12">
-    <nav role="navigation" class="nav-primary">
+    <nav class="nav-primary">
       <a href="#services" title="My services">Services</a><a href="#about-me" title="Who is Rikk Ogden?">About</a><a href="#toolset" title="My toolset" id="link-toolset">Toolset</a><a href="" title="Read my blog">Blog</a><a href="#contact" title="Get in touch">Contact</a>
     </nav>
   </div>
@@ -46,7 +46,7 @@
 </header>
 
 <div class="hero">
-<img src="assets/images/bkg-phoneregular.jpg" class="hero__image hero__image--scale-pan">
+<img src="assets/images/bkg-phoneregular.jpg" class="hero__image hero__image--scale-pan" alt="hero image">
 <div class="grid hero__content heading-group heading-group--white">
   <h1 class="heading-group__title hero-content">Digital Creative Services</h1>
   <hr class="hr">
@@ -76,8 +76,8 @@
         <p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button  button--open-websites">Take a Peek</a></p>
       </div>
       <div class="ad__badges">
-      <img src="assets/images/icons/css3.svg">
-      <img src="assets/images/icons/html5.svg">
+      <img src="assets/images/icons/css3.svg" alt="css3 logo">
+      <img src="assets/images/icons/html5.svg" alt="html5 logo">
       </div>
     </div>
   </div>
@@ -107,15 +107,15 @@
 <div class="modal wrapper" id="modal-websites" role="dialog" aria-labelledby="WebsiteExamples" aria-describedby="WebsiteExamplesDescription">
 <a class="modal__overlay"></a>
 <div class="modal__inner">
-<button class="modal__btn__close button--close-modal"  title="close this dialog">
+<a class="modal__btn__close button--close-modal"  title="close this dialog" role="button">
 <div class="modal__btn__close__x modal__btn__close__x--left"></div>
 <div class="modal__btn__close__x modal__btn__close__x--right"></div>
-</button>
+</a>
 
 <div class="ad">
   <div class="ad__image-wrapper">
     <div class="ad__image ad__image ad__image--websites"></div>
-      <div class="ad__image-content heading-group heading-group--white heading-group--md">
+      <div class="ad__image-content heading-group heading-group--white heading-group--md" id="WebsiteExamples">
         <h2 class="heading-group__title">Websites</h2>
         <hr class="hr">
         <h3 class="heading-group__subtitle">Methodology and Examples</h3>
@@ -126,11 +126,9 @@
 
 <div class="modal__scrollable wrapper">
 <article class="grid ">
-  <section class="row row--gutters-xl centered">
+  <section class="row row--gutters-xl centered" id="WebsiteExamplesDescription">
   <div class="col col--md__12">
-    <p>
-      <h1>Content coming soon...</h1>
-    </p>
+      <h2>Content coming soon...</h2>
   </div>
 
   <div class="col col--md__12">
@@ -153,15 +151,15 @@
 <div class="modal wrapper" id="modal-creative" role="dialog" aria-labelledby="CreativeExamples" aria-describedby="CreativeDescription">
 <a class="modal__overlay"></a>
 <div class="modal__inner">
-<button class="modal__btn__close button--close-modal"  title="close this dialog">
+<a class="modal__btn__close button--close-modal"  title="close this dialog" role="button">
 <div class="modal__btn__close__x modal__btn__close__x--left"></div>
 <div class="modal__btn__close__x modal__btn__close__x--right"></div>
-</button>
+</a>
 
 <div class="ad">
   <div class="ad__image-wrapper">
     <div class="ad__image ad__image ad__image--devices"></div>
-      <div class="ad__image-content heading-group heading-group--white heading-group--md">
+      <div class="ad__image-content heading-group heading-group--white heading-group--md" id="CreativeExamples">
         <h2 class="heading-group__title">Creative Media</h2>
         <hr class="hr">
         <h3 class="heading-group__subtitle">Examples of banners, logos and other media</h3>
@@ -174,17 +172,17 @@
 <article class="examples">
 <div class="page-section">
 <div class="grid">
-<section class="row row--gutters-xl">
+<section class="row row--gutters-xl" id="CreativeDescription">
 <div class="heading-group heading-group--md heading-group--bottom-margin-sm">
 <h5 class="heading-group__title">CruiseSoon Logo</h5>
 <hr class="hr hr--dark">
 <h6 class="heading-group__subtitle">Online cruise agency</h6>
 </div>
 <div class="col col--md__6">
-<img src="assets/images/logo-cruisesoon-blue.png" alt="cruise soon logo composition">
+<img src="assets/images/logo-cruisesoon-blue.png" alt="cruisesoon logo 1">
 </div>
 <div class="col col--md__6">
-<img src="assets/images/logo-cruisesoon-white.png" alt="cruise soon logo composition">
+<img src="assets/images/logo-cruisesoon-white.png" alt="cruisesoon logo 2">
 </div>
 <div class="col centered">
 <p>I was not given a design brief so I came up with something that I liked. I used the nintendo switch logo as inspiration, and I wanted something that would sit well on a coloured background. I selected blue to convey both the ocean, relaxation and a sense of calm.</p>
@@ -202,7 +200,7 @@
 <h6 class="heading-group__subtitle">Online travel agency</h6>
 </div>
 <div class="col centered">
-<img src="assets/images/logo-a1travel.png" alt="cruise soon logo composition" class="native">
+<img src="assets/images/logo-a1travel.png" alt="a1travel logo" class="native">
 </div>
 <div class="col centered">
 <p>This one was the logo for the main brand of the company I worked for for 19 years.</p>
@@ -258,8 +256,7 @@ My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media d
 <div class="col col--md__12">
 <div class="about-me__button-group">
 <p><a class="button button--lg button--brand-1 button--fw button--open-work-history" role="button">Work History & Experience</a></p>
-
-<p><hr class="hr hr--dark"></p>
+<hr class="hr hr--dark">
 <p><a class="button " href="downloads/rikk-ogden-cv.pdf" role="button" download>Download my CV <i class="ficon ficon-download" aria-hidden="true"></i></a>
 </p>
 <i class="ficon ficon-pdf" aria-hidden="true"></i> <small> Format: PDF | File size: 100kb</small>
@@ -275,15 +272,15 @@ My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media d
 <div class="modal wrapper" id="modal-workhistory" role="dialog" aria-labelledby="WorkHistoryTitle" aria-describedby="WorkHistoryDescription">
 <a class="modal__overlay"></a>
 <div class="modal__inner">
-<button class="modal__btn__close button--close-modal"  title="close this dialog">
+<a class="modal__btn__close button--close-modal"  title="close this dialog" role="button">
 <div class="modal__btn__close__x modal__btn__close__x--left"></div>
 <div class="modal__btn__close__x modal__btn__close__x--right"></div>
-</button>
+</a>
 
 <div class="ad">
   <div class="ad__image-wrapper">
     <div class="ad__image ad__image ad__image--devices"></div>
-      <div class="ad__image-content heading-group heading-group--white heading-group--md">
+      <div class="ad__image-content heading-group heading-group--white heading-group--md" id="WorkHistoryTitle">
         <h2 class="heading-group__title">Work History &amp; Experience</h2>
         <hr class="hr">
         <h3 class="heading-group__subtitle">Where I began to where I am now</h3>
@@ -293,7 +290,7 @@ My <b>name</b> is Rikk Ogden and I'm a self-trained website and creative media d
 </div>
 
 <div class="modal__scrollable wrapper work-history">
-<article>
+<article id="WorkHistoryDescription">
   <div class="page-section">
   <div class="grid">
   <section class="row row--gutters-xxl">
@@ -458,6 +455,3 @@ I'm currently spending my time researching and brushing up on all of my core ski
 <script src="temp/scripts/app.js"></script>
 <!-- endbuild -->
 </html>
-<script>
-
-</script>
