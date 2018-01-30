@@ -1,0 +1,25 @@
+.icon-group {
+
+text-align: center;
+height:64px;
+
+&--64 {
+  height:64px;
+  text-align: center;
+  transform-origin: 50% 0;
+  transform: scale(.25);
+  background: #000;
+}
+
+  > div {
+    display: inline-block;
+    transform-origin: 50% 0;
+    transform: scale(.25);
+    background-color: #000;
+
+  }
+
+
+
+
+}

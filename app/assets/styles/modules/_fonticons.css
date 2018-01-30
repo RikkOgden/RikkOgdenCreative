@@ -49,6 +49,16 @@ i.ficon {
   content: "\f078";
 }
 
+.ficon-facebook:before {
+  content: "\e912";
+  color: #3b5998;
+}
+
+.ficon-pinterest:before {
+  content: "\e913";
+  color: #bd081c;
+}
+
 .ficon-email:before {
   content: "\e911";
 }
@@ -59,8 +69,18 @@ i.ficon {
   content: "\e910";
 }
 
+.ficon-gmail:before {
+  content: "\e914";
+  color: #d14836;
+}
+
 .ficon-download:before {
   content: "\e90d";
+}
+
+.ficon-atom:before {
+  content: "\e90e";
+  color: #66595c;
 }
 
 .ficon-postcss:before {

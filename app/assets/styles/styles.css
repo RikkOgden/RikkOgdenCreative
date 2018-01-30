@@ -3,7 +3,7 @@
 @import "normalize.css";
 @import "base/_global";
 @import "modules/_fonticons";
-@import "modules/_grid";
+@import "modules/_grid2";
 @import "modules/_buttons";
 @import "modules/_site-header";
 @import "modules/_footer";

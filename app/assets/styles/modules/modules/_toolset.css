@@ -2,12 +2,6 @@
 
   color: var(--color1--light-3);
 
-  &__text-link {
-    color:#fff;
-    text-decoration: underline;
-
-  }
-
 @mixin atMedium {
 
 }

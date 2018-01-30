@@ -17,6 +17,10 @@ body {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 strong, b {
   color: var(--color2);
   font-weight: 700;

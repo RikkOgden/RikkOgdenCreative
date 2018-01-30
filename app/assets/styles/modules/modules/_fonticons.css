@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'icons-brands';
-  src:  url('fonts/icons-brands.eot?63utbl');
-  src:  url('fonts/icons-brands.eot?63utbl#iefix') format('embedded-opentype'),
-    url('fonts/icons-brands.ttf?63utbl') format('truetype'),
-    url('fonts/icons-brands.woff?63utbl') format('woff'),
-    url('fonts/icons-brands.svg?63utbl#icons-brands') format('svg');
+  src:  url('../../assets/fonts/icons-brands.eot?n8mbjq');
+  src:  url('../../assets/fonts/icons-brands.eot?n8mbjq#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/icons-brands.ttf?n8mbjq') format('truetype'),
+    url('../../assets/fonts/icons-brands.woff?n8mbjq') format('woff'),
+    url('../../assets/fonts/icons-brands.svg?n8mbjq#icons-brands') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-i {
+i.ficon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons-brands' !important;
   speak: none;
@@ -22,6 +22,31 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+ &--boxed {
+
+   padding: 3px;
+   background: #fff;
+   border-radius: 3px;
+ }
+
+&--lg {
+  font-size:1.5rem;
+}
+
+}
+
+.ficon-chevron-left:before {
+  content: "\f053";
+}
+.ficon-chevron-right:before {
+  content: "\f054";
+}
+.ficon-chevron-up:before {
+  content: "\f077";
+}
+.ficon-chevron-down:before {
+  content: "\f078";
 }
 
 .ficon-email:before {
@@ -33,19 +58,21 @@ i {
 .ficon-mobile:before {
   content: "\e910";
 }
-.ficon-cell-phone:before {
-  content: "\e910";
-}
-.ficon-handheld:before {
-  content: "\e910";
-}
+
 .ficon-download:before {
   content: "\e90d";
 }
+
 .ficon-postcss:before {
   content: "\e90a";
   color: #dc3a0d;
 }
+
+.ficon-jquery:before {
+  content: "\e90c";
+  color: #0769ad;
+}
+
 .ficon-adobeillustrator:before {
   content: "\e900";
   color: #ff7c00;
@@ -64,12 +91,13 @@ i {
 }
 .ficon-github:before {
   content: "\e904";
+  color: #000;
 }
 .ficon-gulp:before {
   content: "\e905";
   color: #da4648;
 }
-.ficon-html52:before {
+.ficon-html5:before {
   content: "\e906";
   color: #e34f26;
 }
@@ -77,47 +105,11 @@ i {
   content: "\e907";
   color: #0077b5;
 }
-.ficon-nodejs2:before {
+.ficon-nodejs:before {
   content: "\e908";
   color: #393;
 }
 .ficon-npm:before {
   content: "\e909";
   color: #cb3837;
-}
-.ficon-atom:before {
-  content: "\e90e";
-  color: #66595c;
-}
-.ficon-facebook:before {
-  content: "\e912";
-  color: #3b5998;
-}
-.ficon-gmail:before {
-  content: "\e914";
-  color: #d14836;
-}
-.ficon-javascript:before {
-  content: "\e90b";
-  color: #f7df1e;
-}
-.ficon-jquery:before {
-  content: "\e90c";
-  color: #0769ad;
-}
-.ficon-pinterest:before {
-  content: "\e913";
-  color: #bd081c;
-}
-.ficon-chevron-left:before {
-  content: "\f053";
-}
-.ficon-chevron-right:before {
-  content: "\f054";
-}
-.ficon-chevron-up:before {
-  content: "\f077";
-}
-.ficon-chevron-down:before {
-  content: "\f078";
 }

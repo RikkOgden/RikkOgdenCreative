@@ -4,11 +4,13 @@
 }
 
 .grid {
-  margin: 0 auto;
-  padding: 0 0;
+margin: 0 auto;
+padding: 0 15px;
+
+
 
   @mixin atMedium {
-  max-width:1200px;
+  max-width:1230px;
 
 
   &--mt-md {margin-top:15px; }
@@ -19,13 +21,13 @@
 
 &--sm {
   @mixin atMedium {
-  max-width:800px;
+  max-width:830px;
 }
 }
 
 &--md {
   @mixin atMedium {
-  max-width:1024px;
+  max-width:1054px;
 }
 
 }
@@ -50,7 +52,8 @@ display: block;
 
 
 &--gutters-md {
-margin:0 -8px;
+  padding: 0 8px;
+  margin:0 -16px;
 }
 
 &--gutters-md > .col{
@@ -58,15 +61,17 @@ padding:0 8px;
 }
 
 &--gutters-lg {
-margin:0 -12px;
+  padding: 0 12px;
+  margin:0 -24px;
 }
 
 &--gutters-lg > .col{
-padding:0 12px;
+  padding: 0 12px;
 }
 
 &--gutters-xl {
-margin:0 -16px;
+  padding: 0 16px;
+  margin:0 -32px;
 }
 
 &--gutters-xl > .col{
@@ -74,14 +79,16 @@ padding:0 16px;
 }
 
 &--gutters-xxl {
+padding: 0 25px;
 margin:0 -50px;
+
 }
 
-&--gutters-xxl > .col{
-padding:0 50px;
+&--gutters-xxl  .col{
+padding:0 25px;
 }
 
-> .col {
+ .col {
 
   position: relative;
   float:left;
