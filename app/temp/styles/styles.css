@@ -1691,6 +1691,7 @@ height: 200px;
 background-color: transparent;
 
 }
+#modal-websites dt {color: #1C3144;}
 .hero__image--scale-pan {
 margin-left: auto;
 margin-right: auto;
@@ -1850,6 +1851,7 @@ display: block;
 font-size: 20.8px;
 font-size: 1.3rem;
 font-weight: 700;
+color: #1C3144;
 
 }
 .work-history dd {
