@@ -2,13 +2,17 @@
 text-align: center;
 background: color(var(--color1) tint(0%) alpha(1));
 color:#fff;
-padding: 100px 0 60px 0;
 position: relative;
 overflow: hidden;
 z-index: 0;
 
 @mixin atMedium {
-padding: 180px 0 180px 0;
+  min-height:55vh;
+}
+
+
+
+@mixin atMedium {
 clip-path: polygon(
 0 0,
 100% 0,
@@ -39,14 +43,20 @@ clip-path: none;
 &__image {
 position: absolute;
 top:0;
-left:0;
+transform-origin: 50% 50%;
+transform: translate3d(-50%, 0, 0) scale3d(1.2, 1.2, 1.2);
 z-index: 0;
-width: 100%;
 }
 
 &__content {
 position: relative;
-z-index: 2
+margin:100px 0 30px 0;
+z-index: 2;
+
+@mixin atMedium {
+margin:10rem 0;
+}
+
 }
 
 

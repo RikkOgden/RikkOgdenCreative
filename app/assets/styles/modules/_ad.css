@@ -44,8 +44,10 @@ background:#fff;
 &--hover-animation:hover {
 
     & .ad__image {
-    transform: scale(1.2);
-    transition:.8s ease-in;}
+      left:50%;
+      transform-origin: 50% 0;
+      transform: translate3d(-50%, -10%, 0) scale3d(1.2, 1.2, 1.2);
+    transition:.4s ease-in;}
 }
 
 &__badges {
@@ -90,14 +92,14 @@ background:#fff;
 
 &__image {
   position: absolute;
-  top:0;
-  left:0;
   width:120%;
   height: 120%;
   background-size: cover;
   background-position: center center;
-  transform-origin: 50%;
   transition:.2s ease-out;
+  left:50%;
+  transform-origin: 50% 0;
+  transform: translate3d(-50%, 0, 0) scale3d(1, 1, 1);
 
 &--websites {
     background-image: url('../../assets/images/mobile-phone-sm.jpg');
@@ -108,6 +110,10 @@ background:#fff;
 &--design {
     background-image: url('../../assets/images/mobile-phone-sm.jpg');
 }
+&--logo {
+    background-image: url('../../assets/images/logo-cruisesoon-blue.png');
+}
+
 &--rikk {
     background-image: url('../../assets/images/photo-rikk-ogden72.jpg');
 }

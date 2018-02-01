@@ -1,15 +1,18 @@
 
 
 .hero__image--scale-pan {
+animation: scale-pan-blur 16s infinite;
+min-width:800px;
+}
+
+
+.hero__image--scale {
 margin-left: auto;
 margin-right: auto;
 min-width: 1200px;
-animation: scale-pan-blur 16s infinite;
+animation: scale 8s;
+animation-fill-mode: forwards;
 
-@mixin atMedium {
-min-width: 1920px;
-width: 100%;
-}
 }
 
 
@@ -47,7 +50,28 @@ width: 100%;
   to   {transform: scale3d(1, 1, 1)}
 }
 
+@keyframes scale {
+    0% {
+      opacity: 0;
+      filter: blur(4px);
 
+    }
+    5% {
+      opacity: 0.7;
+
+    }
+    75% {
+        transform: translate3d(-50%, 0, 0) scale3d(1.3, 1.3, 1.3);
+        animation-timing-function: ease-in;
+        opacity: 1;
+        filter: blur(15px);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0) scale3d(1.6, 1.6, 1.6);
+        opacity: 0;
+        filter: blur(24px);
+    }
+}
 
 @keyframes scale-pan-blur {
     0% {
@@ -59,15 +83,15 @@ width: 100%;
       opacity: 0.7;
 
     }
-    95% {
-        transform: scale3d(1.3, 1.3, 1.3) translate3d(-170px, -100px, 0px);
+    75% {
+        transform: translate3d(-60%, -5%, 0) scale3d(1.3, 1.3, 1.3);
         animation-timing-function: ease-in;
         opacity: 1;
-        filter: blur(8px);
+        filter: blur(15px);
     }
     100% {
-        transform: scale3d(1.8, 1.8, 1.8) translate3d(-190px, -120px, 0px);
+        transform: translate3d(-60%, -5%, 0) scale3d(1.6, 1.6, 1.6);
         opacity: 0;
-        filter: blur(15px);
+        filter: blur(24px);
     }
 }

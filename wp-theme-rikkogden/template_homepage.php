@@ -1,58 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Rikk Ogden Creative Design</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="I'm a website designer and frontend developer who also creates other web related creative assets">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#ffffff">
-  <!-- build:css assets/styles/style.css -->
-  <link href='temp/styles/styles.css' rel='stylesheet' type='text/css'>
-  <!-- endbuild -->
-  <!-- build:js assets/scripts/vendor.js -->
-  <script src="temp/scripts/vendor.js"></script>
-  <!-- endbuild -->
-</head>
-<body>
-<div id="page-top"></div>
-<div class="wrapper">
-<header class="site-header">
-<div class="grid">
-  <div class="row">
-    <div class="col col--md__4">
-      <a class="site-header__logo" href="#page-top" title="Rikk Ogden Creative">
-        <div class="icon icon--roc-logo">
-          Rikk Ogden Creative. Front End Web and Graphic Design.
-        </div>
-    </a>
-  </div>
-  <div class="col col--md__12">
-    <nav class="nav-primary">
-      <a href="#services" title="My services">Services</a><a href="#about-me" title="Who is Rikk Ogden?">About</a><a href="#toolset" title="My toolset" id="link-toolset">Toolset</a><a href="#contact" title="Get in touch">Contact</a>
-    </nav>
-  </div>
-    <a class="site-header__menu-icon" role="button">
-    <div class="site-header__menu-icon__bar"></div>
-    <div class="site-header__menu-icon__bar--back"></div>
-    </a>
-  </div>
-</div>
-</header>
+<?php /* Template Name: homepage */ ?>
+
+<?php get_header(); ?>
 
 <div class="hero">
-<img src="assets/images/bkg-phoneregular.jpg" class="hero__image hero__image--scale-pan" alt="hero image">
-<div class="hero__content">
-<div class="grid heading-group heading-group--white">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bkg-phoneregular.jpg" class="hero__image hero__image--scale-pan" alt="hero image">
+<div class="grid hero__content heading-group heading-group--white">
   <h1 class="heading-group__title hero-content">Digital Creative Services</h1>
   <hr class="hr">
   <h2 class="heading-group__subtitle">Websites, front end development & web graphics</h2>
-</div>
 </div>
 </div>
 
@@ -78,8 +33,8 @@
         <p class="ad__button-wrapper ad__button-wrapper--center hide-sm"><a class="button  button--open-websites">Take a Peek</a></p>
       </div>
       <div class="ad__badges">
-      <img src="assets/images/icons/css3.svg" alt="css3 logo">
-      <img src="assets/images/icons/html5.svg" alt="html5 logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/css3.svg" alt="css3 logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/html5.svg" alt="html5 logo">
       </div>
     </div>
   </div>
@@ -254,7 +209,7 @@
 <!--End Modal for Creative-->
 
 <div class="page-section page-section--brand-3 " id="about-me">
-<section class="about-me feature-item">
+<section class="about-me">
   <div class="grid grid--md">
   <div class="heading-group heading-group--bottom-margin">
   <h2 class="heading-group__title">About Me</h2>
@@ -263,12 +218,7 @@
   </div>
 <div class="row row--gutters-xl generic-content">
 <div class="col col--md__6">
-
-  <picture>
-      <source class="lazyload" data-srcset="assets/images/rikk-ogden@2x.jpg 1920w" media="(min-width: 1280px)">
-      <source class="lazyload" data-srcset="assets/images/rikk-ogden@x1.jpg 960w" media="(min-width: 768px)">
-      <img class="lazyload" data-srcset="assets/images/rikk-ogden@x05.jpg 480w, assets/images/rikk-ogden@x1.jpg 960w"  alt="Rikk Ogden" title="A dodgy photo of me">
-  </picture>
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/rikk-ogden.jpg" alt="Rikk Ogden" title="Photo Of Rikk Ogden" />
 </div>
 <div class="col col--md__6">
 My <b>name</b> is Rikk Ogden and I'm website and creative media designer / frontend developer. I'm also a husband and a father, a keen music lover and an noob video gamer.
@@ -444,41 +394,6 @@ I'm currently spending my time researching and brushing up on all of my core ski
 
 </main>
 
-<footer class="site-footer"  id="contact">
-<div class="grid">
-<div class="row row--gutters-xl">
-<div class="col">
-<a class="site-footer__logo" href="#page-top" role="button" title="RikkOgden Logo. Click to scroll to top.">
-<div class="icon icon--roc-logo"></div>
-</a>
-</div>
-<div class="col site-footer__contact">
-<div class="grid grid--sm">
-<div class="row row--gutters-xl centered">
-  <div class="col col--md__6">
-    <i class="ficon ficon--boxed ficon-gmail" aria-hidden="true"></i><br><a href="mailto:rikkogdencreative@gmail.com" title="email me" class="site-footer__text-link">rikkogdencreative@gmail.com</a>
-  </div>
-  <div class="col col--md__6">
-    <i class="ficon ficon-mobile" aria-hidden="true"></i><br> <a href="tel:+447580008971" class="site-footer__text-link">+44 7580 008 971</a>
-  </div>
-
-</div>
-</div>
-</div>
-
-<div class="col site-footer__social">
-<a href=""><i class="ficon ficon--boxed ficon-linkedin" aria-hidden="true"></i></a> <i class="ficon ficon--boxed ficon-pinterest" aria-hidden="true"></i>
-</div>
-<div class="col col--md__12 site-footer__small">
-&copy;2018 Richard Ogden.
-</div>
-</div>
-</div>
-</footer>
-
-</div>
-<!-- build:js assets/scripts/app.js -->
-<script src="temp/scripts/app.js"></script>
-<!-- endbuild -->
+<?php get_footer(); ?>
 </body>
 </html>

@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="assets/styles/style-53ff15c833.css"/>
+  <link rel="stylesheet" href="assets/styles/style-3dfdf2cd3d.css"/>
   <script src="assets/scripts/vendor-01475f1e95.js"></script>
 </head>
 <body>
@@ -43,10 +43,12 @@
 
 <div class="hero">
 <img src="assets/images/bkg-phoneregular.jpg" class="hero__image hero__image--scale-pan" alt="hero image">
-<div class="grid hero__content heading-group heading-group--white">
+<div class="hero__content">
+<div class="grid heading-group heading-group--white">
   <h1 class="heading-group__title hero-content">Digital Creative Services</h1>
   <hr class="hr">
   <h2 class="heading-group__subtitle">Websites, front end development & web graphics</h2>
+</div>
 </div>
 </div>
 
@@ -248,7 +250,7 @@
 <!--End Modal for Creative-->
 
 <div class="page-section page-section--brand-3 " id="about-me">
-<section class="about-me">
+<section class="about-me feature-item">
   <div class="grid grid--md">
   <div class="heading-group heading-group--bottom-margin">
   <h2 class="heading-group__title">About Me</h2>
@@ -257,7 +259,12 @@
   </div>
 <div class="row row--gutters-xl generic-content">
 <div class="col col--md__6">
-<img src="assets/images/rikk-ogden.jpg" alt="Rikk Ogden" title="Photo Of Rikk Ogden">
+
+  <picture>
+      <source class="lazyload" data-srcset="assets/images/rikk-ogden@2x.jpg 1920w" media="(min-width: 1280px)">
+      <source class="lazyload" data-srcset="assets/images/rikk-ogden@x1.jpg 960w" media="(min-width: 768px)">
+      <img class="lazyload" data-srcset="assets/images/rikk-ogden@x05.jpg 480w, assets/images/rikk-ogden@x1.jpg 960w"  alt="Rikk Ogden" title="A dodgy photo of me">
+  </picture>
 </div>
 <div class="col col--md__6">
 My <b>name</b> is Rikk Ogden and I'm website and creative media designer / frontend developer. I'm also a husband and a father, a keen music lover and an noob video gamer.
