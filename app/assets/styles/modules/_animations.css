@@ -2,7 +2,7 @@
 
 .hero__image--scale-pan {
 animation: scale-pan-blur 16s infinite;
-min-width:800px;
+min-width:680px;
 }
 
 

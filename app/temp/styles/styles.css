@@ -890,13 +890,15 @@ z-index: 5;
     text-indent: -9999px;
     border-radius: 8px 8px;
     overflow: hidden;
+    border: 1px solid rgb(21, 37, 51);
 
 }
 @media (max-width: 769px) {
 .site-header__logo--transparent {
 background-color:transparent;
--webkit-transform: translate3d(-50%, 0, 0) scale3d(0.5, 0.5, 0.5);
-        transform: translate3d(-50%, 0, 0) scale3d(0.5, 0.5, 0.5);
+-webkit-transform: translate3d(-50%, 0, 0) scale3d(0.42, 0.42, 0.42);
+        transform: translate3d(-50%, 0, 0) scale3d(0.42, 0.42, 0.42);
+border:none;
 
 }
 
@@ -929,6 +931,8 @@ background-color: rgba(28, 49, 68, 0.95);
 background-color: rgba(28, 49, 68, 0);
 border-radius: 0 0 0 0
 
+
+
 }
 .site-header--is-scrolling .site-header__logo .icon--logo {
     opacity: 0.8;
@@ -938,6 +942,11 @@ border-radius: 0 0 0 0
 }
 .site-header--is-scrolling .site-header__logo .icon--logo:hover {
 opacity: 1;
+
+}
+.site-header--is-scrolling .site-header__logo {
+background:  rgb(21, 37, 51);
+border:none;
 
 }
 
@@ -1070,17 +1079,17 @@ color: #fff;
 
 }
 .nav-primary {
-  position:absolute;
-  width:100%;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-  background-color: rgba(28, 49, 68, 0.8);
-  z-index: 2;
-  padding: 70px 18px 18px 18px;
-  text-align: center;
-  opacity: 0;
+position:absolute;
+width:100%;
+-webkit-transform-origin: top;
+        transform-origin: top;
+-webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+background-color: rgba(28, 49, 68, 0.9);
+z-index: 2;
+padding: 70px 18px 18px 18px;
+text-align: center;
+opacity: 0;
 
 }
 @media (max-width: 769px) {
@@ -1104,7 +1113,7 @@ opacity: 1;
 }
 .nav-primary a {
 display: inline-block;
-padding: 8px 12px;
+padding: 8px 8px;
 color: #fff;
 font-weight: 300;
 text-decoration: none;
@@ -1131,7 +1140,7 @@ transition: opacity .15s linear;
 
 }
 .nav-primary a--is-current-link {
-  color: #000;
+color: #000;
 
 }
 .nav-primary a:hover {
@@ -1266,7 +1275,7 @@ left: 0;
 width: 100%;
 height: 100%;
 content: "";
-background-color: rgba(28, 49, 68, 0.5);
+background-color: rgba(28, 49, 68, 0.3);
 z-index: 1;
 
 }
@@ -1354,6 +1363,7 @@ width: 100%;
 height: auto;
 margin: 0 0 32px 0;
 margin: 0 0 2rem 0;
+display: block;
 
 }
 .ad--no-mgn-b {margin: 0 0 0 0;
@@ -1458,13 +1468,13 @@ height:auto;
 
 }
 .ad__image--websites {
-    background-image: url('../../assets/images/mobile-phone-sm.jpg');
+    background-image: url('../../assets/images/devicessm.jpg');
 }
 .ad__image--devices {
-    background-image: url('../../assets/images/bkg-devices72.jpg');
+    background-image: url('../../assets/images/bkg-devicessm.jpg');
 }
 .ad__image--design {
-    background-image: url('../../assets/images/mobile-phone-sm.jpg');
+    background-image: url('../../assets/images/creativemediasm.jpg');
 }
 .ad__image--logo {
     background-image: url('../../assets/images/logo-cruisesoon-blue.png');
@@ -1484,7 +1494,7 @@ left: 0;
 width: 100%;
 height: 100%;
 content: "";
-background-color: rgba(7, 12, 17, 0.8);
+background-color: rgba(1, 7, 8, 0.5);
 z-index: 1;
 
 }
@@ -1716,7 +1726,7 @@ background-color: transparent;
 .hero__image--scale-pan {
 -webkit-animation: scale-pan-blur 16s infinite;
         animation: scale-pan-blur 16s infinite;
-min-width:800px;
+min-width:680px;
 }
 .hero__image--scale {
 margin-left: auto;

@@ -3,7 +3,6 @@
 width: 100%;
 @mixin clearfix;
 background: color(var(--color2) shade(15%) alpha(0.2));
-
 z-index: 10;
 
 transition: background-color 0.3s ease-out;
@@ -30,13 +29,15 @@ z-index: 5;
     text-indent: -9999px;
     border-radius: 8px 8px;
     overflow: hidden;
+    border: 1px solid color(var(--color2) shade(25%) alpha(1));
 
 
 
     &--transparent {
       @mixin maxMedium {
       background-color:transparent;
-      transform: translate3d(-50%, 0, 0) scale3d(0.5, 0.5, 0.5);
+      transform: translate3d(-50%, 0, 0) scale3d(0.42, 0.42, 0.42);
+      border:none;
     }
     }
 
@@ -71,8 +72,13 @@ border-radius: 0 0 0 0;
   }
 }
 
-}
 
+
+}
+& .site-header__logo {
+background:  color(var(--color2) shade(25%) alpha(1));
+border:none;
+}
 
 }
 }

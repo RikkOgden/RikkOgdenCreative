@@ -6,6 +6,9 @@ position: relative;
 width: 100%;
 height: auto;
 margin: 0 0 2rem 0;
+display: block;
+
+
 
 &--no-mgn-b {margin: 0 0 0 0;}
 
@@ -102,13 +105,13 @@ background:#fff;
   transform: translate3d(-50%, 0, 0) scale3d(1, 1, 1);
 
 &--websites {
-    background-image: url('../../assets/images/mobile-phone-sm.jpg');
+    background-image: url('../../assets/images/devicessm.jpg');
 }
 &--devices {
-    background-image: url('../../assets/images/bkg-devices72.jpg');
+    background-image: url('../../assets/images/bkg-devicessm.jpg');
 }
 &--design {
-    background-image: url('../../assets/images/mobile-phone-sm.jpg');
+    background-image: url('../../assets/images/creativemediasm.jpg');
 }
 &--logo {
     background-image: url('../../assets/images/logo-cruisesoon-blue.png');
@@ -130,7 +133,7 @@ background:#fff;
     width: 100%;
     height: 100%;
     content: "";
-    background-color: color(var(--color2) shade(75%) alpha(.8));
+    background-color: color(var(--color1) shade(95%) alpha(.5));
     z-index: 1
 }
 }
