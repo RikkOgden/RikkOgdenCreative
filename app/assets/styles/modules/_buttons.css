@@ -26,6 +26,7 @@ text-align: center;
   background-color: color(var(--color3) shade(30%));
   border-bottom-color: color(var(--color3) shade(35%));
   box-shadow: 0 6px 6px 0 color(var(--color2)  alpha(.35));
+color:#fff;
 }
 
 &--brand-1 {

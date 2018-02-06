@@ -1,0 +1,7 @@
+.methodology {
+
+  & dl {margin: 0 0 0 0; display: block; }
+  & dt {font-size: 1.3rem; font-weight: 700; color: var(--color2);}
+  & dd {font-size:0.9rem; font-weight: 300; padding: 0 0 1em 0; margin: 0 0 0 0;}
+
+}

@@ -117,6 +117,10 @@ background:#fff;
     background-image: url('../../assets/images/logo-cruisesoon-blue.png');
 }
 
+&--cellphone {
+background-image: url('../../assets/images/cellphone.jpg')
+}
+
 &--rikk {
     background-image: url('../../assets/images/photo-rikk-ogden72.jpg');
 }
